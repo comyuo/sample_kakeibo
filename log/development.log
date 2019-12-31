@@ -75,3 +75,2874 @@ Processing by Rails::WelcomeController#index as HTML
 Completed 200 OK in 74ms (Views: 49.2ms | ActiveRecord: 0.0ms | Allocations: 1737)
 
 
+Started GET "/" for ::1 at 2019-12-21 09:38:20 +0900
+  
+Mysql2::Error::ConnectionError (Can't connect to local MySQL server through socket '/var/run/mysqld/mysqld.sock' (2)):
+  
+mysql2 (0.5.3) lib/mysql2/client.rb:90:in `connect'
+mysql2 (0.5.3) lib/mysql2/client.rb:90:in `initialize'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `new'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/mysql2_adapter.rb:24:in `mysql2_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:889:in `new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:933:in `checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:912:in `try_to_checkout_new_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:873:in `acquire_connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:595:in `checkout'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:439:in `connection'
+activerecord (6.0.2.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1121:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:238:in `retrieve_connection'
+activerecord (6.0.2.1) lib/active_record/connection_handling.rb:206:in `connection'
+activerecord (6.0.2.1) lib/active_record/migration.rb:562:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:27:in `block in call'
+activesupport (6.0.2.1) lib/active_support/callbacks.rb:101:in `run_callbacks'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/actionable_exceptions.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:32:in `call'
+web-console (4.0.1) lib/web_console/middleware.rb:132:in `call_app'
+web-console (4.0.1) lib/web_console/middleware.rb:28:in `block in call'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `catch'
+web-console (4.0.1) lib/web_console/middleware.rb:17:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (6.0.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `block in tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (6.0.2.1) lib/active_support/tagged_logging.rb:80:in `tagged'
+railties (6.0.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.8) lib/rack/method_override.rb:22:in `call'
+rack (2.0.8) lib/rack/runtime.rb:22:in `call'
+activesupport (6.0.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/static.rb:126:in `call'
+rack (2.0.8) lib/rack/sendfile.rb:111:in `call'
+actionpack (6.0.2.1) lib/action_dispatch/middleware/host_authorization.rb:83:in `call'
+webpacker (4.2.2) lib/webpacker/dev_server_proxy.rb:23:in `perform_request'
+rack-proxy (0.6.5) lib/rack/proxy.rb:57:in `call'
+railties (6.0.2.1) lib/rails/engine.rb:526:in `call'
+puma (4.3.1) lib/puma/configuration.rb:228:in `call'
+puma (4.3.1) lib/puma/server.rb:681:in `handle_request'
+puma (4.3.1) lib/puma/server.rb:472:in `process_client'
+puma (4.3.1) lib/puma/server.rb:328:in `block in run'
+puma (4.3.1) lib/puma/thread_pool.rb:134:in `block in spawn_thread'
+Started GET "/" for ::1 at 2019-12-21 10:02:27 +0900
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by Rails::WelcomeController#index as HTML
+  Rendering vendor/bundle/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb
+  Rendered vendor/bundle/gems/railties-6.0.2.1/lib/rails/templates/rails/welcome/index.html.erb (Duration: 70.6ms | Allocations: 311)
+Completed 200 OK in 156ms (Views: 109.4ms | ActiveRecord: 0.0ms | Allocations: 1737)
+
+
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('7160567532974956800', 0)[0m
+  [1m[35m (1.3ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateIncomes (20191221013605)
+  [1m[35m (177.9ms)[0m  [1m[35mCREATE TABLE `incomes` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `description` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (1.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191221013605')[0m
+  [1m[35m (3.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (1.2ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT RELEASE_LOCK('7160567532974956800')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (2.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (2.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT GET_LOCK('7160567532974956800', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateFixedcosts (20191221014915)
+  [1m[35m (42.8ms)[0m  [1m[35mCREATE TABLE `fixedcosts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `description` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191221014915')[0m
+  [1m[35m (4.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT RELEASE_LOCK('7160567532974956800')[0m
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('7160567532974956800', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateVariablecosts (20191221015815)
+  [1m[35m (114.7ms)[0m  [1m[35mCREATE TABLE `variablecosts` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `name` varchar(255) NOT NULL, `description` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191221015815')[0m
+  [1m[35m (3.8ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT RELEASE_LOCK('7160567532974956800')[0m
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2019-12-21 11:06:57 +0900
+  [1m[35m (1.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 32.3ms | Allocations: 394)
+[Webpacker] Compiling...
+[Webpacker] Compiled all packs in /home/hironoriogata/sample_kakeibo/public/packs
+[Webpacker] warning Skipping preferred cache folder "/home/hironoriogata/.cache/yarn" because it is not writable.
+warning Selected the next writable cache folder in the list, will be "/tmp/.yarn-cache-1000".
+
+[Webpacker] Hash: 53154d7baad00c6a1252
+Version: webpack 4.41.4
+Time: 12253ms
+Built at: 2019-12-21 11:07:20
+                                     Asset       Size       Chunks                         Chunk Names
+    js/application-0b67a3cc2fcde6055024.js    124 KiB  application  [emitted] [immutable]  application
+js/application-0b67a3cc2fcde6055024.js.map    139 KiB  application  [emitted] [dev]        application
+                             manifest.json  364 bytes               [emitted]              
+Entrypoint application = js/application-0b67a3cc2fcde6055024.js js/application-0b67a3cc2fcde6055024.js.map
+[./app/javascript/channels sync recursive _channel\.js$] ./app/javascript/channels sync _channel\.js$ 160 bytes {application} [built]
+[./app/javascript/channels/index.js] 211 bytes {application} [built]
+[./app/javascript/packs/application.js] 749 bytes {application} [built]
+[./node_modules/webpack/buildin/module.js] (webpack)/buildin/module.js 552 bytes {application} [built]
+    + 3 hidden modules
+
+Completed 200 OK in 23902ms (Views: 23883.7ms | ActiveRecord: 0.0ms | Allocations: 27944)
+
+
+Started GET "/incomes" for ::1 at 2019-12-21 11:07:26 +0900
+Processing by IncomesController#index as HTML
+  Rendering incomes/index.html.erb within layouts/application
+  [1m[36mIncome Load (0.8ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` ORDER BY `incomes`.`created_at` ASC[0m
+  ↳ app/views/incomes/index.html.erb:6
+  Rendered incomes/index.html.erb within layouts/application (Duration: 49.2ms | Allocations: 1008)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 324ms (Views: 206.9ms | ActiveRecord: 55.2ms | Allocations: 7485)
+
+
+Started GET "/incomes/new" for ::1 at 2019-12-21 11:07:28 +0900
+Processing by IncomesController#new as HTML
+  Rendering incomes/new.html.erb within layouts/application
+  Rendered incomes/_form.html.erb (Duration: 86.6ms | Allocations: 2885)
+  Rendered incomes/new.html.erb within layouts/application (Duration: 247.6ms | Allocations: 6655)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 307ms (Views: 274.3ms | ActiveRecord: 2.0ms | Allocations: 13250)
+
+
+Started POST "/incomes" for ::1 at 2019-12-21 11:07:49 +0900
+Processing by IncomesController#create as HTML
+  Parameters: {"authenticity_token"=>"0lqIRWf+Kw/AcmYLrYwwUg6u4rj6kxKQOUYhy9B0GG4KC2KQ5kTDlqo3VGA/i1US5lHdksdjAuqM7UTwNZu/lw==", "income"=>{"name"=>"売上", "description"=>"1か月の売上"}, "commit"=>"Create Income"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incomes_controller.rb:21:in `create'
+  [1m[36mIncome Create (1.9ms)[0m  [1m[32mINSERT INTO `incomes` (`name`, `description`, `created_at`, `updated_at`) VALUES ('売上', '1か月の売上', '2019-12-21 02:07:49.066236', '2019-12-21 02:07:49.066236')[0m
+  ↳ app/controllers/incomes_controller.rb:21:in `create'
+  [1m[35m (8.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incomes_controller.rb:21:in `create'
+Redirected to http://localhost:3000/incomes/1
+Completed 302 Found in 36ms (ActiveRecord: 10.5ms | Allocations: 2815)
+
+
+Started GET "/incomes/1" for ::1 at 2019-12-21 11:07:49 +0900
+Processing by IncomesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIncome Load (39.5ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/incomes_controller.rb:8:in `show'
+  Rendering incomes/show.html.erb within layouts/application
+  Rendered incomes/show.html.erb within layouts/application (Duration: 82.3ms | Allocations: 658)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 161ms (Views: 98.9ms | ActiveRecord: 39.5ms | Allocations: 5337)
+
+
+Started GET "/incomes/1/edit" for ::1 at 2019-12-21 11:07:53 +0900
+Processing by IncomesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIncome Load (8.4ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/incomes_controller.rb:16:in `edit'
+  Rendering incomes/edit.html.erb within layouts/application
+  Rendered incomes/_form.html.erb (Duration: 1.3ms | Allocations: 214)
+  Rendered incomes/edit.html.erb within layouts/application (Duration: 18.6ms | Allocations: 810)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 106ms (Views: 92.8ms | ActiveRecord: 8.4ms | Allocations: 5223)
+
+
+Started GET "/incomes" for ::1 at 2019-12-21 11:07:55 +0900
+Processing by IncomesController#index as HTML
+  Rendering incomes/index.html.erb within layouts/application
+  [1m[36mIncome Load (7.8ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` ORDER BY `incomes`.`created_at` ASC[0m
+  ↳ app/views/incomes/index.html.erb:6
+  Rendered incomes/index.html.erb within layouts/application (Duration: 11.2ms | Allocations: 840)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 27.4ms | ActiveRecord: 7.8ms | Allocations: 4405)
+
+
+Started GET "/incomes/new" for ::1 at 2019-12-21 11:07:58 +0900
+Processing by IncomesController#new as HTML
+  Rendering incomes/new.html.erb within layouts/application
+  Rendered incomes/_form.html.erb (Duration: 1.7ms | Allocations: 197)
+  Rendered incomes/new.html.erb within layouts/application (Duration: 5.6ms | Allocations: 592)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 43.4ms | ActiveRecord: 0.0ms | Allocations: 4168)
+
+
+Started POST "/incomes" for ::1 at 2019-12-21 11:08:11 +0900
+Processing by IncomesController#create as HTML
+  Parameters: {"authenticity_token"=>"ENCCCHlT8BOlTaSCgpo89IqQLOe9aR2TJGyeQruIVjPIgWjd+OkYis8IlukQnVm0Ym8TzYCZDemRx/t5Xmfxyg==", "income"=>{"name"=>"雑収入", "description"=>"その他の収入"}, "commit"=>"Create Income"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incomes_controller.rb:21:in `create'
+  [1m[36mIncome Create (0.5ms)[0m  [1m[32mINSERT INTO `incomes` (`name`, `description`, `created_at`, `updated_at`) VALUES ('雑収入', 'その他の収入', '2019-12-21 02:08:11.660825', '2019-12-21 02:08:11.660825')[0m
+  ↳ app/controllers/incomes_controller.rb:21:in `create'
+  [1m[35m (10.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incomes_controller.rb:21:in `create'
+Redirected to http://localhost:3000/incomes/2
+Completed 302 Found in 36ms (ActiveRecord: 11.8ms | Allocations: 2577)
+
+
+Started GET "/incomes/2" for ::1 at 2019-12-21 11:08:11 +0900
+Processing by IncomesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIncome Load (3.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/incomes_controller.rb:8:in `show'
+  Rendering incomes/show.html.erb within layouts/application
+  Rendered incomes/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 128)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 275ms (Views: 260.9ms | ActiveRecord: 3.2ms | Allocations: 6348)
+
+
+Started GET "/incomes" for ::1 at 2019-12-21 11:08:15 +0900
+Processing by IncomesController#index as HTML
+  Rendering incomes/index.html.erb within layouts/application
+  [1m[36mIncome Load (4.1ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` ORDER BY `incomes`.`created_at` ASC[0m
+  ↳ app/views/incomes/index.html.erb:6
+  Rendered incomes/index.html.erb within layouts/application (Duration: 14.2ms | Allocations: 965)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 56ms (Views: 49.4ms | ActiveRecord: 4.1ms | Allocations: 4607)
+
+
+Started GET "/fixedcosts" for ::1 at 2019-12-21 11:08:26 +0900
+Processing by FixedcostsController#index as HTML
+  Rendering fixedcosts/index.html.erb within layouts/application
+  [1m[36mFixedcost Load (0.9ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` ORDER BY `fixedcosts`.`created_at` ASC[0m
+  ↳ app/views/fixedcosts/index.html.erb:6
+  Rendered fixedcosts/index.html.erb within layouts/application (Duration: 61.3ms | Allocations: 974)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 245ms (Views: 162.8ms | ActiveRecord: 43.0ms | Allocations: 6144)
+
+
+Started GET "/fixedcosts/new" for ::1 at 2019-12-21 11:08:29 +0900
+Processing by FixedcostsController#new as HTML
+  Rendering fixedcosts/new.html.erb within layouts/application
+  Rendered fixedcosts/_form.html.erb (Duration: 30.4ms | Allocations: 366)
+  Rendered fixedcosts/new.html.erb within layouts/application (Duration: 63.5ms | Allocations: 1110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 226ms (Views: 177.8ms | ActiveRecord: 27.8ms | Allocations: 9629)
+
+
+Started POST "/fixedcosts" for ::1 at 2019-12-21 11:08:39 +0900
+Processing by FixedcostsController#create as HTML
+  Parameters: {"authenticity_token"=>"DrMljRZjlkRNAk8hhMwQe3ZiF81NgUckhpvUmCSx8DcR9Ml1AKWD0Azj64uAFE0+ryZXY7OCCscz+6qdqMLCww==", "fixedcost"=>{"name"=>"電気代", "description"=>"九州電力"}, "commit"=>"Create Fixedcost"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/fixedcosts_controller.rb:21:in `create'
+  [1m[36mFixedcost Create (0.4ms)[0m  [1m[32mINSERT INTO `fixedcosts` (`name`, `description`, `created_at`, `updated_at`) VALUES ('電気代', '九州電力', '2019-12-21 02:08:39.891777', '2019-12-21 02:08:39.891777')[0m
+  ↳ app/controllers/fixedcosts_controller.rb:21:in `create'
+  [1m[35m (2.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/fixedcosts_controller.rb:21:in `create'
+Redirected to http://localhost:3000/fixedcosts/1
+Completed 302 Found in 13ms (ActiveRecord: 3.5ms | Allocations: 2624)
+
+
+Started GET "/fixedcosts/1" for ::1 at 2019-12-21 11:08:39 +0900
+Processing by FixedcostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFixedcost Load (0.7ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/fixedcosts_controller.rb:8:in `show'
+  Rendering fixedcosts/show.html.erb within layouts/application
+  Rendered fixedcosts/show.html.erb within layouts/application (Duration: 27.2ms | Allocations: 295)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 309ms (Views: 299.9ms | ActiveRecord: 0.7ms | Allocations: 6716)
+
+
+Started GET "/fixedcosts" for ::1 at 2019-12-21 11:08:44 +0900
+Processing by FixedcostsController#index as HTML
+  Rendering fixedcosts/index.html.erb within layouts/application
+  [1m[36mFixedcost Load (1.7ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` ORDER BY `fixedcosts`.`created_at` ASC[0m
+  ↳ app/views/fixedcosts/index.html.erb:6
+  Rendered fixedcosts/index.html.erb within layouts/application (Duration: 10.3ms | Allocations: 826)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 110ms (Views: 105.7ms | ActiveRecord: 1.7ms | Allocations: 4724)
+
+
+Started GET "/fixedcosts/new" for ::1 at 2019-12-21 11:08:46 +0900
+Processing by FixedcostsController#new as HTML
+  Rendering fixedcosts/new.html.erb within layouts/application
+  Rendered fixedcosts/_form.html.erb (Duration: 1.1ms | Allocations: 197)
+  Rendered fixedcosts/new.html.erb within layouts/application (Duration: 3.3ms | Allocations: 589)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 45ms (Views: 42.8ms | ActiveRecord: 0.0ms | Allocations: 4339)
+
+
+Started POST "/fixedcosts" for ::1 at 2019-12-21 11:08:53 +0900
+Processing by FixedcostsController#create as HTML
+  Parameters: {"authenticity_token"=>"nesaVk4QRM3mymKv8hC/w/9Bo7QMCQp1B67AuPF/SFWCrPauWNZRWacrxgX2yOKGJgXjGvIKR5ayzr69fQx6oQ==", "fixedcost"=>{"name"=>"水道代", "description"=>""}, "commit"=>"Create Fixedcost"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/fixedcosts_controller.rb:21:in `create'
+  [1m[36mFixedcost Create (2.6ms)[0m  [1m[32mINSERT INTO `fixedcosts` (`name`, `description`, `created_at`, `updated_at`) VALUES ('水道代', '', '2019-12-21 02:08:53.389304', '2019-12-21 02:08:53.389304')[0m
+  ↳ app/controllers/fixedcosts_controller.rb:21:in `create'
+  [1m[35m (3.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/fixedcosts_controller.rb:21:in `create'
+Redirected to http://localhost:3000/fixedcosts/2
+Completed 302 Found in 33ms (ActiveRecord: 6.6ms | Allocations: 2573)
+
+
+Started GET "/fixedcosts/2" for ::1 at 2019-12-21 11:08:53 +0900
+Processing by FixedcostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFixedcost Load (1.6ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/fixedcosts_controller.rb:8:in `show'
+  Rendering fixedcosts/show.html.erb within layouts/application
+  Rendered fixedcosts/show.html.erb within layouts/application (Duration: 2.9ms | Allocations: 128)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 285ms (Views: 277.1ms | ActiveRecord: 1.6ms | Allocations: 5680)
+
+
+Started GET "/fixedcosts/2/edit" for ::1 at 2019-12-21 11:08:56 +0900
+Processing by FixedcostsController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFixedcost Load (2.6ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/fixedcosts_controller.rb:16:in `edit'
+  Rendering fixedcosts/edit.html.erb within layouts/application
+  Rendered fixedcosts/_form.html.erb (Duration: 1.9ms | Allocations: 213)
+  Rendered fixedcosts/edit.html.erb within layouts/application (Duration: 31.2ms | Allocations: 804)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 125ms (Views: 73.2ms | ActiveRecord: 2.6ms | Allocations: 5103)
+
+
+Started PATCH "/fixedcosts/2" for ::1 at 2019-12-21 11:09:03 +0900
+Processing by FixedcostsController#update as HTML
+  Parameters: {"authenticity_token"=>"y+yh/c3sySfH3V3aFgyJuHh7ST15mGZIgkykFo9R/fAqHK9k9wT+vKDtDCwVOBCTJE7uxm++rjoPjg5FKKuZ0A==", "fixedcost"=>{"name"=>"水道代", "description"=>"熊本市"}, "commit"=>"Update Fixedcost", "id"=>"2"}
+  [1m[36mFixedcost Load (0.9ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/fixedcosts_controller.rb:30:in `update'
+  [1m[35m (0.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/fixedcosts_controller.rb:32:in `update'
+  [1m[36mFixedcost Update (3.7ms)[0m  [1m[33mUPDATE `fixedcosts` SET `fixedcosts`.`description` = '熊本市', `fixedcosts`.`updated_at` = '2019-12-21 02:09:03.123305' WHERE `fixedcosts`.`id` = 2[0m
+  ↳ app/controllers/fixedcosts_controller.rb:32:in `update'
+  [1m[35m (4.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/fixedcosts_controller.rb:32:in `update'
+Redirected to http://localhost:3000/fixedcosts/2
+Completed 302 Found in 55ms (ActiveRecord: 9.8ms | Allocations: 3166)
+
+
+Started GET "/fixedcosts/2" for ::1 at 2019-12-21 11:09:03 +0900
+Processing by FixedcostsController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFixedcost Load (5.8ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/fixedcosts_controller.rb:8:in `show'
+  Rendering fixedcosts/show.html.erb within layouts/application
+  Rendered fixedcosts/show.html.erb within layouts/application (Duration: 0.9ms | Allocations: 130)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 326ms (Views: 311.9ms | ActiveRecord: 5.8ms | Allocations: 7238)
+
+
+Started GET "/fixedcosts" for ::1 at 2019-12-21 11:09:05 +0900
+Processing by FixedcostsController#index as HTML
+  Rendering fixedcosts/index.html.erb within layouts/application
+  [1m[36mFixedcost Load (1.6ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` ORDER BY `fixedcosts`.`created_at` ASC[0m
+  ↳ app/views/fixedcosts/index.html.erb:6
+  Rendered fixedcosts/index.html.erb within layouts/application (Duration: 8.6ms | Allocations: 966)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 91ms (Views: 79.1ms | ActiveRecord: 1.6ms | Allocations: 4752)
+
+
+Started GET "/variablecosts" for ::1 at 2019-12-21 11:09:19 +0900
+Processing by VariablecostsController#index as HTML
+  Rendering variablecosts/index.html.erb within layouts/application
+  [1m[36mVariablecost Load (4.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC[0m
+  ↳ app/views/variablecosts/index.html.erb:6
+  Rendered variablecosts/index.html.erb within layouts/application (Duration: 70.4ms | Allocations: 975)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 219ms (Views: 133.6ms | ActiveRecord: 49.2ms | Allocations: 5707)
+
+
+Started GET "/variablecosts/new" for ::1 at 2019-12-21 11:09:21 +0900
+Processing by VariablecostsController#new as HTML
+  Rendering variablecosts/new.html.erb within layouts/application
+  Rendered variablecosts/_form.html.erb (Duration: 15.2ms | Allocations: 366)
+  Rendered variablecosts/new.html.erb within layouts/application (Duration: 44.3ms | Allocations: 1110)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 136ms (Views: 93.0ms | ActiveRecord: 30.3ms | Allocations: 8214)
+
+
+Started POST "/variablecosts" for ::1 at 2019-12-21 11:09:32 +0900
+Processing by VariablecostsController#create as HTML
+  Parameters: {"authenticity_token"=>"ey4Z4vw68Y1t33dgvwNWbT9Tx9XwNKXBd2sPbuQoUi4Lxr9DIuNLCTx/jomTBLCswut0T3esz6WO2r79iDEsFQ==", "variablecost"=>{"name"=>"材料代", "description"=>"売上原価"}, "commit"=>"Create Variablecost"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/variablecosts_controller.rb:21:in `create'
+  [1m[36mVariablecost Create (1.1ms)[0m  [1m[32mINSERT INTO `variablecosts` (`name`, `description`, `created_at`, `updated_at`) VALUES ('材料代', '売上原価', '2019-12-21 02:09:32.814567', '2019-12-21 02:09:32.814567')[0m
+  ↳ app/controllers/variablecosts_controller.rb:21:in `create'
+  [1m[35m (6.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/variablecosts_controller.rb:21:in `create'
+Redirected to http://localhost:3000/variablecosts/1
+Completed 302 Found in 59ms (ActiveRecord: 8.3ms | Allocations: 2580)
+
+
+Started GET "/variablecosts/1" for ::1 at 2019-12-21 11:09:32 +0900
+Processing by VariablecostsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVariablecost Load (12.9ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` WHERE `variablecosts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/variablecosts_controller.rb:8:in `show'
+  Rendering variablecosts/show.html.erb within layouts/application
+  Rendered variablecosts/show.html.erb within layouts/application (Duration: 95.1ms | Allocations: 296)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 142ms (Views: 116.5ms | ActiveRecord: 12.9ms | Allocations: 4721)
+
+
+Started GET "/variablecosts" for ::1 at 2019-12-21 11:09:36 +0900
+Processing by VariablecostsController#index as HTML
+  Rendering variablecosts/index.html.erb within layouts/application
+  [1m[36mVariablecost Load (2.2ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC[0m
+  ↳ app/views/variablecosts/index.html.erb:6
+  Rendered variablecosts/index.html.erb within layouts/application (Duration: 19.2ms | Allocations: 826)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 62ms (Views: 58.3ms | ActiveRecord: 2.2ms | Allocations: 4533)
+
+
+Started GET "/" for ::1 at 2019-12-21 11:09:49 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 107)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 25.5ms | ActiveRecord: 0.0ms | Allocations: 3625)
+
+
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7160567532974956800', 0)[0m
+  [1m[35m (1.6ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateIncomeValues (20191222041022)
+  [1m[35m (29.8ms)[0m  [1m[35mCREATE TABLE `income_values` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `income_id` int NOT NULL, `year_month` date, `value` int, `description` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191222041022')[0m
+  [1m[35m (2.2ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (1.1ms)[0m  [1m[34mSELECT RELEASE_LOCK('7160567532974956800')[0m
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2019-12-22 13:27:37 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 7.0ms | Allocations: 441)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 601ms (Views: 554.8ms | ActiveRecord: 0.0ms | Allocations: 26489)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 13:27:41 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (3.6ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 51.6ms | Allocations: 3533)
+Completed 500 Internal Server Error in 122ms (ActiveRecord: 13.7ms | Allocations: 6823)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/" for ::1 at 2019-12-22 13:28:13 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 133)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 20ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 3856)
+
+
+Started GET "/incomes" for ::1 at 2019-12-22 13:30:00 +0900
+Processing by IncomesController#index as HTML
+  Rendering incomes/index.html.erb within layouts/application
+  [1m[36mIncome Load (3.3ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` ORDER BY `incomes`.`created_at` ASC[0m
+  ↳ app/views/incomes/index.html.erb:6
+  Rendered incomes/index.html.erb within layouts/application (Duration: 52.1ms | Allocations: 4555)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 81ms (Views: 73.7ms | ActiveRecord: 5.1ms | Allocations: 9323)
+
+
+Started GET "/incomes/2/edit" for ::1 at 2019-12-22 13:30:03 +0900
+Processing by IncomesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIncome Load (0.5ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/incomes_controller.rb:16:in `edit'
+  Rendering incomes/edit.html.erb within layouts/application
+  Rendered incomes/_form.html.erb (Duration: 41.1ms | Allocations: 658)
+  Rendered incomes/edit.html.erb within layouts/application (Duration: 123.3ms | Allocations: 2452)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 159ms (Views: 153.2ms | ActiveRecord: 0.5ms | Allocations: 8399)
+
+
+Started GET "/incomes" for ::1 at 2019-12-22 13:30:08 +0900
+Processing by IncomesController#index as HTML
+  Rendering incomes/index.html.erb within layouts/application
+  [1m[36mIncome Load (0.3ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` ORDER BY `incomes`.`created_at` ASC[0m
+  ↳ app/views/incomes/index.html.erb:6
+  Rendered incomes/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 979)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.4ms | ActiveRecord: 0.3ms | Allocations: 4850)
+
+
+Started GET "/incomes/new" for ::1 at 2019-12-22 13:30:11 +0900
+Processing by IncomesController#new as HTML
+  Rendering incomes/new.html.erb within layouts/application
+  Rendered incomes/_form.html.erb (Duration: 3.0ms | Allocations: 199)
+  Rendered incomes/new.html.erb within layouts/application (Duration: 7.0ms | Allocations: 763)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 69ms (Views: 67.6ms | ActiveRecord: 0.0ms | Allocations: 4921)
+
+
+Started POST "/incomes" for ::1 at 2019-12-22 13:30:29 +0900
+Processing by IncomesController#create as HTML
+  Parameters: {"authenticity_token"=>"w/6YaE0rmk56MVhG25YBey19gjQ9J4c9yu3SZD4QD2JkCrQRVSHeBc86tjExZ43onZQ/kQ2BnPMiiTZnhbY4iA==", "income"=>{"name"=>"受取利息", "description"=>"決算利息"}, "commit"=>"Create Income"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/incomes_controller.rb:21:in `create'
+  [1m[36mIncome Create (2.5ms)[0m  [1m[32mINSERT INTO `incomes` (`name`, `description`, `created_at`, `updated_at`) VALUES ('受取利息', '決算利息', '2019-12-22 04:30:29.396560', '2019-12-22 04:30:29.396560')[0m
+  ↳ app/controllers/incomes_controller.rb:21:in `create'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/incomes_controller.rb:21:in `create'
+Redirected to http://localhost:3000/incomes/3
+Completed 302 Found in 12ms (ActiveRecord: 4.5ms | Allocations: 2950)
+
+
+Started GET "/incomes/3" for ::1 at 2019-12-22 13:30:29 +0900
+Processing by IncomesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mIncome Load (0.6ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/incomes_controller.rb:8:in `show'
+  Rendering incomes/show.html.erb within layouts/application
+  Rendered incomes/show.html.erb within layouts/application (Duration: 1.6ms | Allocations: 297)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 17.7ms | ActiveRecord: 0.6ms | Allocations: 4616)
+
+
+Started GET "/incomes" for ::1 at 2019-12-22 13:30:33 +0900
+Processing by IncomesController#index as HTML
+  Rendering incomes/index.html.erb within layouts/application
+  [1m[36mIncome Load (1.5ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` ORDER BY `incomes`.`created_at` ASC[0m
+  ↳ app/views/incomes/index.html.erb:6
+  Rendered incomes/index.html.erb within layouts/application (Duration: 12.2ms | Allocations: 1108)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 54ms (Views: 51.4ms | ActiveRecord: 1.5ms | Allocations: 4795)
+
+
+Started GET "/" for ::1 at 2019-12-22 13:30:41 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 132)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.2ms | ActiveRecord: 0.0ms | Allocations: 3927)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 13:30:43 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (1.0ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 2252)
+Completed 500 Internal Server Error in 6ms (ActiveRecord: 1.0ms | Allocations: 2792)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/" for ::1 at 2019-12-22 13:46:07 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 123)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 10.2ms | ActiveRecord: 0.0ms | Allocations: 3735)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 13:46:11 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (3.0ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 6.6ms | Allocations: 2233)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 3.0ms | Allocations: 2761)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/income_values" for ::1 at 2019-12-22 16:27:08 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  Rendered income_values/index.html.erb within layouts/application (Duration: 3.1ms | Allocations: 514)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 93ms (Views: 90.8ms | ActiveRecord: 0.0ms | Allocations: 5167)
+
+
+Started POST "/income_values/new" for ::1 at 2019-12-22 16:27:16 +0900
+Processing by IncomeValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"AzpjtwkJWxJppSI/5fvt6SlNjl4NItZh3NXd2mO+LK9scloTevpBVgsBmBz173D2iZ+dF9hqQ4sbpfgYTh0Eqg==", "year_month"=>"2019-12"}
+  [1m[36mIncome Load (1.1ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` ORDER BY `incomes`.`created_at` ASC[0m
+  ↳ app/models/form/income_form.rb:7:in `map'
+  Rendering income_values/new.html.erb within layouts/application
+  [1m[36mIncome Load (0.7ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/new.html.erb:28
+  [1m[36mIncome Load (0.5ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/new.html.erb:28
+  [1m[36mIncome Load (0.4ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/new.html.erb:28
+  Rendered income_values/new.html.erb within layouts/application (Duration: 64.5ms | Allocations: 5902)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 156ms (Views: 73.1ms | ActiveRecord: 22.9ms | Allocations: 18000)
+
+
+Started POST "/income_values" for ::1 at 2019-12-22 16:27:30 +0900
+Processing by IncomeValuesController#create as HTML
+  Parameters: {"authenticity_token"=>"ILpPHGrZJj8+SEMI+z25ZISp3BwhelHY3TCr6KTRLG9P8na4GSo8e1zs+SvrKSR7JHvPVfQyxDIaQI4qiXIEag==", "form_income_form"=>{"income_values_attributes"=>{"0"=>{"income_id"=>"1", "year_month(1i)"=>"2019", "year_month(2i)"=>"12", "year_month(3i)"=>"1", "value"=>"10000", "description"=>""}, "1"=>{"income_id"=>"2", "year_month(1i)"=>"2019", "year_month(2i)"=>"12", "year_month(3i)"=>"1", "value"=>"", "description"=>""}, "2"=>{"income_id"=>"3", "year_month(1i)"=>"2019", "year_month(2i)"=>"12", "year_month(3i)"=>"1", "value"=>"", "description"=>""}}}, "commit"=>"Create Income form"}
+Completed 500 Internal Server Error in 7ms (ActiveRecord: 0.0ms | Allocations: 2286)
+
+
+  
+NameError (uninitialized constant Form::IncomeValue
+Did you mean?  Form::IncomeValues):
+  
+app/controllers/income_values_controller.rb:37:in `income_form_params'
+app/controllers/income_values_controller.rb:26:in `create'
+Started POST "/income_values" for ::1 at 2019-12-22 16:28:49 +0900
+Processing by IncomeValuesController#create as HTML
+  Parameters: {"authenticity_token"=>"ILpPHGrZJj8+SEMI+z25ZISp3BwhelHY3TCr6KTRLG9P8na4GSo8e1zs+SvrKSR7JHvPVfQyxDIaQI4qiXIEag==", "form_income_form"=>{"income_values_attributes"=>{"0"=>{"income_id"=>"1", "year_month(1i)"=>"2019", "year_month(2i)"=>"12", "year_month(3i)"=>"1", "value"=>"10000", "description"=>""}, "1"=>{"income_id"=>"2", "year_month(1i)"=>"2019", "year_month(2i)"=>"12", "year_month(3i)"=>"1", "value"=>"", "description"=>""}, "2"=>{"income_id"=>"3", "year_month(1i)"=>"2019", "year_month(2i)"=>"12", "year_month(3i)"=>"1", "value"=>"", "description"=>""}}}, "commit"=>"Create Income form"}
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms | Allocations: 2276)
+
+
+  
+NameError (uninitialized constant Form::IncomeValue
+Did you mean?  Form::IncomeValues):
+  
+app/controllers/income_values_controller.rb:37:in `income_form_params'
+app/controllers/income_values_controller.rb:26:in `create'
+Started GET "/" for ::1 at 2019-12-22 16:30:33 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 30.9ms | Allocations: 287)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 46.1ms | ActiveRecord: 0.0ms | Allocations: 4899)
+
+
+Started GET "/" for ::1 at 2019-12-22 16:54:58 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 132)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 16.4ms | ActiveRecord: 0.0ms | Allocations: 3781)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 16:55:02 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.6ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 3.9ms | Allocations: 2561)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.6ms | Allocations: 3668)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/income_values" for ::1 at 2019-12-22 16:55:21 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  Rendered income_values/index.html.erb within layouts/application (Duration: 49.8ms | Allocations: 510)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms | Allocations: 5170)
+
+
+Started POST "/income_values/new" for ::1 at 2019-12-22 16:58:19 +0900
+Processing by IncomeValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"/INuMazMNVezXZ204fczWnpZAuTi9s2vpORGCR10e+KTy1eV3z8vE9H5J5fx465F2osRrTe+WEVjlGPLMNdT5w==", "year_month"=>"2019-12"}
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` ORDER BY `incomes`.`created_at` ASC[0m
+  ↳ app/models/form/income_form.rb:7:in `map'
+  Rendering income_values/new.html.erb within layouts/application
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/new.html.erb:28
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/new.html.erb:28
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/new.html.erb:28
+  Rendered income_values/new.html.erb within layouts/application (Duration: 13.6ms | Allocations: 5144)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 24.4ms | ActiveRecord: 0.9ms | Allocations: 9721)
+
+
+Started POST "/income_values" for ::1 at 2019-12-22 16:58:35 +0900
+Processing by IncomeValuesController#create as HTML
+  Parameters: {"authenticity_token"=>"+xBvzki8v+C5tRTcqUVhIBecECw6jEPvzBwczKbG3pOUWFZqO0+lpNsRrv+5Ufw/t04DZe/E1gULbDkOi2X2lg==", "form_income_form"=>{"income_values_attributes"=>{"0"=>{"income_id"=>"1", "year_month(1i)"=>"2019", "year_month(2i)"=>"12", "year_month(3i)"=>"1", "value"=>"10000", "description"=>""}, "1"=>{"income_id"=>"2", "year_month(1i)"=>"2019", "year_month(2i)"=>"12", "year_month(3i)"=>"1", "value"=>"1000", "description"=>""}, "2"=>{"income_id"=>"3", "year_month(1i)"=>"2019", "year_month(2i)"=>"12", "year_month(3i)"=>"1", "value"=>"0", "description"=>""}}}, "commit"=>"Create Income form"}
+Completed 500 Internal Server Error in 3ms (ActiveRecord: 0.0ms | Allocations: 2262)
+
+
+  
+NameError (uninitialized constant Form::IncomeValue
+Did you mean?  Form::IncomeValues):
+  
+app/controllers/income_values_controller.rb:37:in `income_form_params'
+app/controllers/income_values_controller.rb:26:in `create'
+Started GET "/" for ::1 at 2019-12-22 16:59:14 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 287)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.6ms | ActiveRecord: 0.0ms | Allocations: 4459)
+
+
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT GET_LOCK('7160567532974956800', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateFixedcostValues (20191222081321)
+  [1m[35m (33.9ms)[0m  [1m[35mCREATE TABLE `fixedcost_values` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `fixedcost_id` int NOT NULL, `year_month` date, `value` int, `description` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191222081321')[0m
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('7160567532974956800')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2019-12-22 20:55:16 +0900
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 12.1ms | Allocations: 441)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 603ms (Views: 554.7ms | ActiveRecord: 0.0ms | Allocations: 30186)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 21:00:59 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (2.3ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 59.9ms | Allocations: 3565)
+Completed 500 Internal Server Error in 149ms (ActiveRecord: 17.9ms | Allocations: 6470)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/income_values" for ::1 at 2019-12-22 21:01:30 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  Rendered income_values/index.html.erb within layouts/application (Duration: 37.1ms | Allocations: 509)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.0ms | Allocations: 5318)
+
+
+Started POST "/income_values/new" for ::1 at 2019-12-22 21:01:35 +0900
+Processing by IncomeValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"ue2BC/1sWJ2bLdIX/vg8Mou3mTheru6M8OX2mbX7xj7Wpbivjp9C2fmJaDTu7KEtK2WKcYvme2Y3ldNbmFjuOw==", "year_month"=>"2019-12"}
+  [1m[36mIncome Load (0.3ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` ORDER BY `incomes`.`created_at` ASC[0m
+  ↳ app/models/form/income_form.rb:7:in `map'
+  Rendering income_values/new.html.erb within layouts/application
+  [1m[36mIncome Load (0.3ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/new.html.erb:28
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/new.html.erb:28
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/new.html.erb:28
+  Rendered income_values/new.html.erb within layouts/application (Duration: 107.8ms | Allocations: 7125)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 176ms (Views: 121.1ms | ActiveRecord: 23.2ms | Allocations: 20088)
+
+
+Started POST "/income_values" for ::1 at 2019-12-22 21:01:42 +0900
+Processing by IncomeValuesController#create as HTML
+  Parameters: {"authenticity_token"=>"DkAyUEq7iQZ0I37DoJyj7yuTQylCGI2rzp6zYqBaOXphCAv0OUiTQhaHxOCwiD7wi0FQYJdQGEEJ7pagjfkRfw==", "form_income_form"=>{"income_values_attributes"=>{"0"=>{"income_id"=>"1", "year_month(1i)"=>"2019", "year_month(2i)"=>"12", "year_month(3i)"=>"1", "value"=>"10000", "description"=>""}, "1"=>{"income_id"=>"2", "year_month(1i)"=>"2019", "year_month(2i)"=>"12", "year_month(3i)"=>"1", "value"=>"", "description"=>""}, "2"=>{"income_id"=>"3", "year_month(1i)"=>"2019", "year_month(2i)"=>"12", "year_month(3i)"=>"1", "value"=>"", "description"=>""}}}, "commit"=>"Create Income form"}
+  [1m[35m (0.5ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/form/income_form.rb:30:in `block (2 levels) in save'
+  [1m[36mIncomeValue Create (0.6ms)[0m  [1m[32mINSERT INTO `income_values` (`income_id`, `year_month`, `value`, `description`, `created_at`, `updated_at`) VALUES (1, '2019-12-01', 10000, '', '2019-12-22 12:01:42.911806', '2019-12-22 12:01:42.911806')[0m
+  ↳ app/models/form/income_form.rb:30:in `block (2 levels) in save'
+  [1m[36mIncomeValue Create (0.4ms)[0m  [1m[32mINSERT INTO `income_values` (`income_id`, `year_month`, `description`, `created_at`, `updated_at`) VALUES (2, '2019-12-01', '', '2019-12-22 12:01:42.922397', '2019-12-22 12:01:42.922397')[0m
+  ↳ app/models/form/income_form.rb:30:in `block (2 levels) in save'
+  [1m[36mIncomeValue Create (0.4ms)[0m  [1m[32mINSERT INTO `income_values` (`income_id`, `year_month`, `description`, `created_at`, `updated_at`) VALUES (3, '2019-12-01', '', '2019-12-22 12:01:42.925067', '2019-12-22 12:01:42.925067')[0m
+  ↳ app/models/form/income_form.rb:30:in `block (2 levels) in save'
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/form/income_form.rb:24:in `save'
+Redirected to http://localhost:3000/income_values
+Completed 302 Found in 43ms (ActiveRecord: 4.1ms | Allocations: 9919)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 21:01:42 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  Rendered income_values/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 185)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.4ms | ActiveRecord: 0.0ms | Allocations: 3950)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 21:01:56 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  Rendered income_values/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 13ms (Views: 12.4ms | ActiveRecord: 0.0ms | Allocations: 3945)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 21:02:01 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  Rendered income_values/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 12ms (Views: 11.1ms | ActiveRecord: 0.0ms | Allocations: 3941)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 21:02:25 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  Rendered income_values/index.html.erb within layouts/application (Duration: 3.3ms | Allocations: 180)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 17ms (Views: 15.1ms | ActiveRecord: 0.0ms | Allocations: 3943)
+
+
+Started GET "/" for ::1 at 2019-12-22 21:02:40 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.2ms | Allocations: 287)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.0ms | Allocations: 4803)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 21:04:45 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  Rendered income_values/index.html.erb within layouts/application (Duration: 45.2ms | Allocations: 508)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 57.5ms | ActiveRecord: 0.0ms | Allocations: 5224)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 21:04:51 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  Rendered income_values/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 15ms (Views: 13.7ms | ActiveRecord: 0.0ms | Allocations: 3969)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 21:04:53 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  Rendered income_values/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 180)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 16ms (Views: 14.9ms | ActiveRecord: 0.0ms | Allocations: 4007)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 21:05:09 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  Rendered income_values/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 508)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 27.4ms | ActiveRecord: 0.0ms | Allocations: 5495)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 21:21:49 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  Rendered income_values/index.html.erb within layouts/application (Duration: 0.7ms | Allocations: 187)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 22.1ms | ActiveRecord: 0.0ms | Allocations: 4193)
+
+
+Started GET "/income_values" for ::1 at 2019-12-22 21:23:30 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (2.1ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2567)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 2.1ms | Allocations: 3851)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/" for ::1 at 2019-12-23 21:56:23 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 8.5ms | Allocations: 485)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 302ms (Views: 273.4ms | ActiveRecord: 0.0ms | Allocations: 10880)
+
+
+Started GET "/fixedcost_values" for ::1 at 2019-12-23 21:56:41 +0900
+  
+SyntaxError (/home/hironoriogata/sample_kakeibo/app/controllers/fixedcost_values_controller.rb:16: syntax error, unexpected ':', expecting end
+        @form = Form: :FixedcostForm.new
+                    ^):
+  
+app/controllers/fixedcost_values_controller.rb:16: syntax error, unexpected ':', expecting end
+app/controllers/fixedcost_values_controller.rb:16: syntax error, unexpected ':', expecting end
+app/controllers/fixedcost_values_controller.rb:16: syntax error, unexpected ':', expecting end
+Started GET "/fixedcost_values" for ::1 at 2019-12-23 22:00:00 +0900
+Processing by FixedcostValuesController#index as HTML
+  Rendering fixedcost_values/index.html.erb within layouts/application
+  [1m[36mFixedcostValue Load (0.7ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` ORDER BY year_month asc[0m
+  ↳ app/views/fixedcost_values/index.html.erb:10
+  Rendered fixedcost_values/index.html.erb within layouts/application (Duration: 39.0ms | Allocations: 3244)
+Completed 500 Internal Server Error in 125ms (ActiveRecord: 14.8ms | Allocations: 6272)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>固定日科目データ一覧</h2>
+    10: <% if @fixedcost_values.present? %>
+    11: <table>
+    12:     <tr>
+    13:         <th>登録年月</th>
+  
+app/views/fixedcost_values/index.html.erb:10
+Started GET "/fixedcost_values" for ::1 at 2019-12-23 22:01:26 +0900
+Processing by FixedcostValuesController#index as HTML
+  Rendering fixedcost_values/index.html.erb within layouts/application
+  Rendered fixedcost_values/index.html.erb within layouts/application (Duration: 47.9ms | Allocations: 510)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 59ms (Views: 56.3ms | ActiveRecord: 0.0ms | Allocations: 5259)
+
+
+Started POST "/fixedcost_values/new" for ::1 at 2019-12-23 22:01:32 +0900
+Processing by FixedcostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"I/Qr9d8ZxVQ0Kd92z+yI38pN1T18q+guxSauxvvd42EGtmo/nzUutto1nAGSXqjshalbWopnDALTXuovhQgJ9w==", "year_month"=>"2019-12"}
+Completed 500 Internal Server Error in 4ms (ActiveRecord: 0.0ms | Allocations: 2344)
+
+
+  
+NameError (uninitialized constant FixedcostValuesController::Ficedcost):
+  
+app/controllers/fixedcost_values_controller.rb:15:in `new'
+Started GET "/" for ::1 at 2019-12-23 22:02:14 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.9ms | Allocations: 330)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 21ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 4977)
+
+
+Started GET "/income_values" for ::1 at 2019-12-23 22:02:17 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.6ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 2.7ms | Allocations: 2605)
+Completed 500 Internal Server Error in 51ms (ActiveRecord: 18.2ms | Allocations: 4945)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/" for ::1 at 2019-12-23 22:03:10 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 157)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 16.1ms | ActiveRecord: 0.0ms | Allocations: 3876)
+
+
+Started GET "/fixedcost_values" for ::1 at 2019-12-23 22:03:12 +0900
+Processing by FixedcostValuesController#index as HTML
+  Rendering fixedcost_values/index.html.erb within layouts/application
+  [1m[36mFixedcostValue Load (0.6ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` ORDER BY year_month asc[0m
+  ↳ app/views/fixedcost_values/index.html.erb:10
+  Rendered fixedcost_values/index.html.erb within layouts/application (Duration: 6.8ms | Allocations: 2569)
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.6ms | Allocations: 3659)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>固定日科目データ一覧</h2>
+    10: <% if @fixedcost_values.present? %>
+    11: <table>
+    12:     <tr>
+    13:         <th>登録年月</th>
+  
+app/views/fixedcost_values/index.html.erb:10
+  [1m[35m (0.6ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7160567532974956800', 0)[0m
+  [1m[35m (0.7ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Migrating to CreateVariablecostValues (20191225124145)
+  [1m[35m (36.3ms)[0m  [1m[35mCREATE TABLE `variablecost_values` (`id` bigint NOT NULL AUTO_INCREMENT PRIMARY KEY, `variablecost_id` int NOT NULL, `year_month` date, `value` int, `description` varchar(255), `created_at` datetime(6) NOT NULL, `updated_at` datetime(6) NOT NULL)[0m
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  [1m[36mprimary::SchemaMigration Create (2.5ms)[0m  [1m[32mINSERT INTO `schema_migrations` (`version`) VALUES ('20191225124145')[0m
+  [1m[35m (2.3ms)[0m  [1m[35mCOMMIT[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.6ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (1.9ms)[0m  [1m[34mSELECT RELEASE_LOCK('7160567532974956800')[0m
+  [1m[35m (0.2ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/" for ::1 at 2019-12-28 21:37:06 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.8ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 12.8ms | Allocations: 528)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 797ms (Views: 755.0ms | ActiveRecord: 0.0ms | Allocations: 31362)
+
+
+Started GET "/variablecost_values" for ::1 at 2019-12-28 21:37:12 +0900
+  
+SyntaxError (/home/hironoriogata/sample_kakeibo/app/controllers/variablecost_values_controller.rb:49: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/variablecost_values_controller.rb:49: syntax error, unexpected end-of-input, expecting end
+app/controllers/variablecost_values_controller.rb:49: syntax error, unexpected end-of-input, expecting end
+app/controllers/variablecost_values_controller.rb:49: syntax error, unexpected end-of-input, expecting end
+Started GET "/variablecost_values" for ::1 at 2019-12-28 21:38:58 +0900
+  
+SyntaxError (/home/hironoriogata/sample_kakeibo/app/controllers/variablecost_values_controller.rb:48: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/variablecost_values_controller.rb:48: syntax error, unexpected end-of-input, expecting end
+app/controllers/variablecost_values_controller.rb:48: syntax error, unexpected end-of-input, expecting end
+app/controllers/variablecost_values_controller.rb:48: syntax error, unexpected end-of-input, expecting end
+Started GET "/variablecost_values" for ::1 at 2019-12-28 21:46:19 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+SyntaxError (/home/hironoriogata/sample_kakeibo/app/controllers/variablecost_values_controller.rb:53: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/variablecost_values_controller.rb:53: syntax error, unexpected end-of-input, expecting end
+app/controllers/variablecost_values_controller.rb:53: syntax error, unexpected end-of-input, expecting end
+app/controllers/variablecost_values_controller.rb:53: syntax error, unexpected end-of-input, expecting end
+Started GET "/variablecost_values" for ::1 at 2019-12-28 21:48:07 +0900
+  
+SyntaxError (/home/hironoriogata/sample_kakeibo/app/controllers/variablecost_values_controller.rb:54: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/variablecost_values_controller.rb:54: syntax error, unexpected end-of-input, expecting end
+app/controllers/variablecost_values_controller.rb:54: syntax error, unexpected end-of-input, expecting end
+app/controllers/variablecost_values_controller.rb:54: syntax error, unexpected end-of-input, expecting end
+Started GET "/" for ::1 at 2019-12-28 21:48:55 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 24ms (Views: 19.5ms | ActiveRecord: 0.0ms | Allocations: 4098)
+
+
+Started GET "/fixedcost_values" for ::1 at 2019-12-28 21:48:59 +0900
+Processing by FixedcostValuesController#index as HTML
+  Rendering fixedcost_values/index.html.erb within layouts/application
+  [1m[36mFixedcostValue Load (0.6ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` ORDER BY year_month asc[0m
+  ↳ app/views/fixedcost_values/index.html.erb:10
+  Rendered fixedcost_values/index.html.erb within layouts/application (Duration: 35.8ms | Allocations: 3360)
+Completed 500 Internal Server Error in 131ms (ActiveRecord: 12.6ms | Allocations: 6459)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>固定日科目データ一覧</h2>
+    10: <% if @fixedcost_values.present? %>
+    11: <table>
+    12:     <tr>
+    13:         <th>登録年月</th>
+  
+app/views/fixedcost_values/index.html.erb:10
+Started GET "/" for ::1 at 2019-12-28 21:49:10 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 182)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 29ms (Views: 24.9ms | ActiveRecord: 0.0ms | Allocations: 4198)
+
+
+Started GET "/income_values" for ::1 at 2019-12-28 21:49:12 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.7ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 37.1ms | Allocations: 2604)
+Completed 500 Internal Server Error in 82ms (ActiveRecord: 14.6ms | Allocations: 4962)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/" for ::1 at 2019-12-28 21:50:30 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 3.8ms | Allocations: 371)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 45.6ms | ActiveRecord: 0.0ms | Allocations: 5337)
+
+
+Started GET "/variablecost_values" for ::1 at 2019-12-28 21:50:33 +0900
+  
+SyntaxError (/home/hironoriogata/sample_kakeibo/app/controllers/variablecost_values_controller.rb:54: syntax error, unexpected end-of-input, expecting end):
+  
+app/controllers/variablecost_values_controller.rb:54: syntax error, unexpected end-of-input, expecting end
+app/controllers/variablecost_values_controller.rb:54: syntax error, unexpected end-of-input, expecting end
+app/controllers/variablecost_values_controller.rb:54: syntax error, unexpected end-of-input, expecting end
+Started GET "/variablecost_values" for ::1 at 2019-12-28 21:55:44 +0900
+Processing by VariablecostValuesController#index as HTML
+  Rendering variablecost_values/index.html.erb within layouts/application
+  [1m[36mVariablecostValue Load (0.6ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` ORDER BY year_month asc[0m
+  ↳ app/views/variablecost_values/index.html.erb:12
+  Rendered variablecost_values/index.html.erb within layouts/application (Duration: 47.9ms | Allocations: 3282)
+Completed 500 Internal Server Error in 97ms (ActiveRecord: 15.1ms | Allocations: 5846)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     9: 
+    10: <h2>変動費科目データ一覧</h2>
+    11: 
+    12: <% if @variablecost_values.present? %>
+    13: <table>
+    14:     <tr>
+    15:         <th>登録年月日</th>
+  
+app/views/variablecost_values/index.html.erb:12
+Started GET "/" for ::1 at 2019-12-28 22:17:19 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 14ms (Views: 12.9ms | ActiveRecord: 0.0ms | Allocations: 4079)
+
+
+Started GET "/income_values" for ::1 at 2019-12-28 22:17:23 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (1.1ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 5.7ms | Allocations: 3311)
+Completed 500 Internal Server Error in 40ms (ActiveRecord: 21.1ms | Allocations: 6029)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/" for ::1 at 2019-12-28 22:19:58 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.4ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 11ms (Views: 9.4ms | ActiveRecord: 0.0ms | Allocations: 4074)
+
+
+Started GET "/income_values" for ::1 at 2019-12-28 22:20:02 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.6ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 2.9ms | Allocations: 2990)
+Completed 500 Internal Server Error in 33ms (ActiveRecord: 20.8ms | Allocations: 5011)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/" for ::1 at 2019-12-28 22:20:24 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.6ms | Allocations: 171)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 29.1ms | ActiveRecord: 0.0ms | Allocations: 3972)
+
+
+Started GET "/income_values" for ::1 at 2019-12-28 22:23:13 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (1.3ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 5.8ms | Allocations: 2233)
+Completed 500 Internal Server Error in 8ms (ActiveRecord: 1.3ms | Allocations: 2753)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/income_values" for ::1 at 2019-12-28 22:23:19 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.7ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 2.6ms | Allocations: 2240)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.7ms | Allocations: 2766)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/income_values" for ::1 at 2019-12-28 22:23:25 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (1.0ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 3.4ms | Allocations: 2233)
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 1.0ms | Allocations: 2753)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7160567532974956800', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('7160567532974956800')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7160567532974956800', 0)[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('7160567532974956800')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/income_values" for ::1 at 2019-12-28 22:37:20 +0900
+  [1m[35m (0.8ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (6.3ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 15.2ms | Allocations: 3821)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 13.9ms | Allocations: 7620)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/income_values" for ::1 at 2019-12-28 22:37:26 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.7ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 10.7ms | Allocations: 2250)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.7ms | Allocations: 2807)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/" for ::1 at 2019-12-30 15:58:29 +0900
+  [1m[35m (0.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 48.1ms | Allocations: 528)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 512ms (Views: 455.4ms | ActiveRecord: 0.0ms | Allocations: 11599)
+
+
+Started GET "/income_values" for ::1 at 2019-12-30 15:58:46 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (2.5ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 55.6ms | Allocations: 3650)
+Completed 500 Internal Server Error in 132ms (ActiveRecord: 13.4ms | Allocations: 6539)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/income_values" for ::1 at 2019-12-30 16:00:03 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.9ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 58.6ms | Allocations: 2563)
+Completed 500 Internal Server Error in 63ms (ActiveRecord: 0.9ms | Allocations: 3878)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.blank? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/income_values" for ::1 at 2019-12-30 16:00:44 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Exists? (0.6ms)[0m  [1m[34mSELECT 1 AS one FROM `income_values` LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 100.4ms | Allocations: 1748)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 231ms (Views: 202.7ms | ActiveRecord: 26.7ms | Allocations: 7183)
+
+
+Started GET "/" for ::1 at 2019-12-30 16:02:45 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.5ms | Allocations: 372)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.6ms | ActiveRecord: 0.0ms | Allocations: 5160)
+
+
+Started GET "/income_values" for ::1 at 2019-12-30 16:02:50 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  Rendered income_values/index.html.erb within layouts/application (Duration: 39.5ms | Allocations: 508)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 50.7ms | ActiveRecord: 0.0ms | Allocations: 4895)
+
+
+Started GET "/" for ::1 at 2019-12-30 16:03:27 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.3ms | Allocations: 371)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.0ms | ActiveRecord: 0.0ms | Allocations: 5110)
+
+
+Started GET "/income_values" for ::1 at 2019-12-30 16:03:30 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.8ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 4.6ms | Allocations: 2569)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.8ms | Allocations: 3659)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/" for ::1 at 2019-12-30 16:05:03 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 2.5ms | Allocations: 371)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 28.6ms | ActiveRecord: 0.0ms | Allocations: 5260)
+
+
+Started GET "/income_values" for ::1 at 2019-12-30 16:06:45 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.8ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 40.3ms | Allocations: 2574)
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 0.8ms | Allocations: 3675)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <!-- <% if @income_values.present? %> -->
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/income_values" for ::1 at 2019-12-30 16:29:59 +0900
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.6ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 48.9ms | Allocations: 2561)
+Completed 500 Internal Server Error in 53ms (ActiveRecord: 0.6ms | Allocations: 3828)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <!-- <% if @income_values.present? %> -->
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/income_values" for ::1 at 2019-12-30 16:30:34 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.6ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 52.3ms | Allocations: 2559)
+Completed 500 Internal Server Error in 61ms (ActiveRecord: 0.6ms | Allocations: 3827)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8: 
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <!-- <% if @income_values.present? %> -->
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/income_values" for ::1 at 2019-12-30 16:32:46 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.6ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY year_month asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 50.1ms | Allocations: 2562)
+Completed 500 Internal Server Error in 58ms (ActiveRecord: 0.6ms | Allocations: 3829)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: You have an error in your SQL syntax; check the manual that corresponds to your MariaDB server version for the right syntax to use near 'year_month asc' at line 1):
+     7: <% end %>
+     8:  
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+Started GET "/income_values" for ::1 at 2019-12-30 17:07:53 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.6ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  Rendered income_values/index.html.erb within layouts/application (Duration: 46.7ms | Allocations: 3269)
+Completed 500 Internal Server Error in 64ms (ActiveRecord: 0.6ms | Allocations: 5865)
+
+
+  
+ActionView::Template::Error (Mysql2::Error: Unknown column 'yearmonth' in 'order clause'):
+     7: <% end %>
+     8:  
+     9: <h2>収入科目 データ一覧 </h2>
+    10: <% if @income_values.present? %>
+    11: <table>
+    12:   <tr>
+    13:     <th>登録年月</th>
+  
+app/views/income_values/index.html.erb:10
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT GET_LOCK('7160567532974956800', 0)[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+  [1m[36mActiveRecord::InternalMetadata Load (0.5ms)[0m  [1m[34mSELECT `ar_internal_metadata`.* FROM `ar_internal_metadata` WHERE `ar_internal_metadata`.`key` = 'environment' LIMIT 1[0m
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT RELEASE_LOCK('7160567532974956800')[0m
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Started GET "/income_values" for ::1 at 2019-12-30 17:12:32 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.4ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (0.4ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.4ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 169.1ms | Allocations: 14015)
+Completed 500 Internal Server Error in 194ms (ActiveRecord: 36.0ms | Allocations: 16029)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    20: 	<tr>
+    21: 		<td><%= income_value.yearmonth.strftime('%Y年%m月') %></td>
+    22: 		<td><%= @incomes.find(income_value.income_id).name %></td>
+    23: 		<td><%= income_value.value.to_s(:delimited) %> 円</td>
+    24: 		<td><%= income_value.description %></td>
+    25: 		<td>
+    26: 		<%= link_to "編集", [:edit, income_value] %> |
+  
+app/views/income_values/index.html.erb:23:in `to_s'
+app/views/income_values/index.html.erb:23
+app/views/income_values/index.html.erb:19
+Started GET "/income_values" for ::1 at 2019-12-30 17:36:03 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.2ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.9ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 15.8ms | Allocations: 10903)
+Completed 500 Internal Server Error in 24ms (ActiveRecord: 1.3ms | Allocations: 13056)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    20: 	<tr>
+    21: 		<td><%= income_value.yearmonth.strftime('%Y年%m月') %></td>
+    22: 		<td><%= @incomes.find(income_value.income_id).name %></td>
+    23: 		<td><%= income_value.value.to_s(:delimited) %> 円</td>
+    24: 		<td><%= income_value.description %></td>
+    25: 		<td>
+    26: 		<%= link_to "編集", [:edit, income_value] %> |
+  
+app/views/income_values/index.html.erb:23:in `to_s'
+app/views/income_values/index.html.erb:23
+app/views/income_values/index.html.erb:19
+Started GET "/income_values" for ::1 at 2019-12-30 17:44:50 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (1.5ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 16.2ms | Allocations: 10903)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 1.8ms | Allocations: 13056)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    20: 	<tr>
+    21: 		<td><%= income_value.yearmonth.strftime('%Y年%m月') %></td>
+    22: 		<td><%= @incomes.find(income_value.income_id).name %></td>
+    23: 		<td><%= income_value.value.to_s(:delimited) %> 円</td>
+    24: 		<td><%= income_value.description %></td>
+    25: 		<td>
+    26: 		<%= link_to "編集", [:edit, income_value] %> |
+  
+app/views/income_values/index.html.erb:23:in `to_s'
+app/views/income_values/index.html.erb:23
+app/views/income_values/index.html.erb:19
+Started GET "/income_values" for ::1 at 2019-12-30 17:45:54 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.3ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (0.1ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.3ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 37.2ms | Allocations: 11140)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 25.8ms | Allocations: 13154)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    20: 	<tr>
+    21: 		<td><%= income_value.yearmonth.strftime('%Y年%m月') %></td>
+    22: 		<td><%= @incomes.find(income_value.income_id).name %></td>
+    23: 		<td><%= income_value.value.to_s(:delimited) %> 円</td>
+    24: 		<td><%= income_value.description %></td>
+    25: 		<td>
+    26: 		<%= link_to "編集", [:edit, income_value] %> |
+  
+app/views/income_values/index.html.erb:23:in `to_s'
+app/views/income_values/index.html.erb:23
+app/views/income_values/index.html.erb:19
+Started GET "/income_values" for ::1 at 2019-12-30 17:58:36 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.2ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (1.6ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 65.9ms | Allocations: 3783)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 178ms (Views: 171.0ms | ActiveRecord: 2.2ms | Allocations: 10209)
+
+
+Started GET "/income_values" for ::1 at 2019-12-30 18:00:02 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.3ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 54.8ms | Allocations: 3693)
+Completed 500 Internal Server Error in 60ms (ActiveRecord: 0.7ms | Allocations: 4956)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    20: 	<tr>
+    21: 		<td><%= income_value.yearmonth.strftime('%Y年%m月') %></td>
+    22: 		<td><%= @incomes.find(income_value.income_id).name %></td>
+    23: 		<td><%= income_value.value.to_s(:delimited) %> 円</td>
+    24: 		<td><%= income_value.description %></td>
+    25: 		<td>
+    26: 		<%= link_to "編集", [:edit, income_value] %> |
+  
+app/views/income_values/index.html.erb:23:in `to_s'
+app/views/income_values/index.html.erb:23
+app/views/income_values/index.html.erb:19
+Started GET "/" for ::1 at 2019-12-31 16:05:09 +0900
+  [1m[35m (0.5ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 39.7ms | Allocations: 528)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 353ms (Views: 302.5ms | ActiveRecord: 0.0ms | Allocations: 10341)
+
+
+Started GET "/income_values" for ::1 at 2019-12-31 16:05:16 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.9ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (0.4ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.4ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 230.2ms | Allocations: 14242)
+Completed 500 Internal Server Error in 311ms (ActiveRecord: 23.2ms | Allocations: 17136)
+
+
+  
+ActionView::Template::Error (wrong number of arguments (given 1, expected 0)):
+    20: 	<tr>
+    21: 		<td><%= income_value.yearmonth.strftime('%Y年%m月') %></td>
+    22: 		<td><%= @incomes.find(income_value.income_id).name %></td>
+    23: 		<td><%= income_value.value.to_s(:delimited) %> 円</td>
+    24: 		<td><%= income_value.description %></td>
+    25: 		<td>
+    26: 		<%= link_to "編集", [:edit, income_value] %> |
+  
+app/views/income_values/index.html.erb:23:in `to_s'
+app/views/income_values/index.html.erb:23
+app/views/income_values/index.html.erb:19
+Started GET "/income_values" for ::1 at 2019-12-31 16:05:47 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.3ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (0.3ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (1.0ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.5ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 47.5ms | Allocations: 3820)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 66ms (Views: 61.0ms | ActiveRecord: 2.0ms | Allocations: 8689)
+
+
+Started GET "/income_values/1/edit" for ::1 at 2019-12-31 16:05:50 +0900
+Processing by IncomeValuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mIncomeValue Load (0.4ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/income_values_controller.rb:21:in `edit'
+  [1m[36mIncome Load (0.4ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/income_values_controller.rb:22:in `edit'
+  Rendering income_values/edit.html.erb within layouts/application
+  Rendered income_values/edit.html.erb within layouts/application (Duration: 70.3ms | Allocations: 3418)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 305ms (Views: 294.8ms | ActiveRecord: 0.9ms | Allocations: 12930)
+
+
+Started PATCH "/income_values/1" for ::1 at 2019-12-31 16:06:12 +0900
+Processing by IncomeValuesController#update as HTML
+  Parameters: {"authenticity_token"=>"9bcy3rfF0xTcWjGL8/wAqbR2b+uGmjscQ/L/UXv+EfL58bsRgccv20k+xduvLChbskgqGiDKX/ID7QH/+/XNxQ==", "income_value"=>{"yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"10000", "description"=>"12月"}, "commit"=>"Update Income value", "id"=>"1"}
+  [1m[36mIncomeValue Load (0.6ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/income_values_controller.rb:41:in `update'
+  [1m[35m (2.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/income_values_controller.rb:43:in `update'
+  [1m[36mIncomeValue Update (10.9ms)[0m  [1m[33mUPDATE `income_values` SET `income_values`.`description` = '12月', `income_values`.`updated_at` = '2019-12-31 07:06:12.894288' WHERE `income_values`.`id` = 1[0m
+  ↳ app/controllers/income_values_controller.rb:43:in `update'
+  [1m[35m (2.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/income_values_controller.rb:43:in `update'
+Redirected to http://localhost:3000/income_values
+Completed 302 Found in 39ms (ActiveRecord: 16.4ms | Allocations: 3431)
+
+
+Started GET "/income_values" for ::1 at 2019-12-31 16:06:12 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (2.7ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (1.9ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (5.6ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (3.6ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 61.8ms | Allocations: 3456)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 271ms (Views: 255.1ms | ActiveRecord: 13.7ms | Allocations: 8670)
+
+
+Started GET "/income_values/2/edit" for ::1 at 2019-12-31 16:06:20 +0900
+Processing by IncomeValuesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mIncomeValue Load (0.5ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/income_values_controller.rb:21:in `edit'
+  [1m[36mIncome Load (1.7ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/income_values_controller.rb:22:in `edit'
+  Rendering income_values/edit.html.erb within layouts/application
+  Rendered income_values/edit.html.erb within layouts/application (Duration: 3.8ms | Allocations: 1012)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 31ms (Views: 21.6ms | ActiveRecord: 2.2ms | Allocations: 5899)
+
+
+Started PATCH "/income_values/2" for ::1 at 2019-12-31 16:06:39 +0900
+Processing by IncomeValuesController#update as HTML
+  Parameters: {"authenticity_token"=>"zgRJjZ0M5Dj3Z1goPV8MrRaFD9xvXkVBBAlk7UZNHuuKct6y+p8TPcSm9/sJ6BAQPBVMqXaBiI4KiwFlG9obqw==", "income_value"=>{"yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"5000", "description"=>"雑12月"}, "commit"=>"Update Income value", "id"=>"2"}
+  [1m[36mIncomeValue Load (0.6ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/income_values_controller.rb:41:in `update'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/income_values_controller.rb:43:in `update'
+  [1m[36mIncomeValue Update (0.5ms)[0m  [1m[33mUPDATE `income_values` SET `income_values`.`value` = 5000, `income_values`.`description` = '雑12月', `income_values`.`updated_at` = '2019-12-31 07:06:39.122824' WHERE `income_values`.`id` = 2[0m
+  ↳ app/controllers/income_values_controller.rb:43:in `update'
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/income_values_controller.rb:43:in `update'
+Redirected to http://localhost:3000/income_values
+Completed 302 Found in 15ms (ActiveRecord: 3.4ms | Allocations: 3244)
+
+
+Started GET "/income_values" for ::1 at 2019-12-31 16:06:39 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.5ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (0.3ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.3ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.6ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 15.6ms | Allocations: 3455)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 27.2ms | ActiveRecord: 1.6ms | Allocations: 7307)
+
+
+Started GET "/income_values/3/edit" for ::1 at 2019-12-31 16:06:42 +0900
+Processing by IncomeValuesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mIncomeValue Load (1.1ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/income_values_controller.rb:21:in `edit'
+  [1m[36mIncome Load (0.5ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/income_values_controller.rb:22:in `edit'
+  Rendering income_values/edit.html.erb within layouts/application
+  Rendered income_values/edit.html.erb within layouts/application (Duration: 1.6ms | Allocations: 1010)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 16.0ms | ActiveRecord: 1.6ms | Allocations: 5920)
+
+
+Started PATCH "/income_values/3" for ::1 at 2019-12-31 16:07:01 +0900
+Processing by IncomeValuesController#update as HTML
+  Parameters: {"authenticity_token"=>"hdyLuVnRds7YuiwkVa6fcbalyvjArNc/el2fK9+uNHmZz3nyOOP9tgxpOmJtdgHsV8K+sNfVY86TFd2YVwJ+kA==", "income_value"=>{"yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"1", "description"=>"利息12月"}, "commit"=>"Update Income value", "id"=>"3"}
+  [1m[36mIncomeValue Load (0.3ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`id` = 3 LIMIT 1[0m
+  ↳ app/controllers/income_values_controller.rb:41:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/income_values_controller.rb:43:in `update'
+  [1m[36mIncomeValue Update (0.4ms)[0m  [1m[33mUPDATE `income_values` SET `income_values`.`value` = 1, `income_values`.`description` = '利息12月', `income_values`.`updated_at` = '2019-12-31 07:07:01.174443' WHERE `income_values`.`id` = 3[0m
+  ↳ app/controllers/income_values_controller.rb:43:in `update'
+  [1m[35m (4.4ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/income_values_controller.rb:43:in `update'
+Redirected to http://localhost:3000/income_values
+Completed 302 Found in 16ms (ActiveRecord: 5.4ms | Allocations: 3214)
+
+
+Started GET "/income_values" for ::1 at 2019-12-31 16:07:01 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.5ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (0.3ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.3ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.4ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 13.3ms | Allocations: 3456)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 33ms (Views: 30.5ms | ActiveRecord: 1.4ms | Allocations: 7474)
+
+
+Started POST "/income_values/new" for ::1 at 2019-12-31 16:07:14 +0900
+Processing by IncomeValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"+4jTBrPUfENJe9uenXfR0QlGN8GwVdswP6NNSngvCBnFw0BUt4FhA9ldM3G/zGAOXkBJTeZmaO5PpduSAGVPOg==", "yearmonth"=>"2019-11"}
+  [1m[36mIncome Load (0.4ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` ORDER BY `incomes`.`created_at` ASC[0m
+  ↳ app/models/form/income_form.rb:7:in `map'
+  Rendering income_values/new.html.erb within layouts/application
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/new.html.erb:28
+  [1m[36mIncome Load (0.5ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/new.html.erb:28
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/new.html.erb:28
+  Rendered income_values/new.html.erb within layouts/application (Duration: 55.4ms | Allocations: 5461)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 133ms (Views: 64.4ms | ActiveRecord: 1.4ms | Allocations: 12944)
+
+
+Started POST "/income_values" for ::1 at 2019-12-31 16:08:02 +0900
+Processing by IncomeValuesController#create as HTML
+  Parameters: {"authenticity_token"=>"WsjM8+0nsdas9lYY1KXWotGkJ7uhLoad4xZkGwdBfCFkg1+h6XKsljzQvvf2Hmd9hqJZN/cdNUOTEPLDfws7Ag==", "form_income_form"=>{"income_values_attributes"=>{"0"=>{"income_id"=>"1", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"11", "yearmonth(3i)"=>"1", "value"=>"2000", "description"=>"11月"}, "1"=>{"income_id"=>"2", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"11", "yearmonth(3i)"=>"1", "value"=>"10", "description"=>"雑11月"}, "2"=>{"income_id"=>"3", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"11", "yearmonth(3i)"=>"1", "value"=>"2", "description"=>"利息11月"}}}, "commit"=>"Create Income form"}
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/form/income_form.rb:30:in `block (2 levels) in save'
+  [1m[36mIncomeValue Create (1.2ms)[0m  [1m[32mINSERT INTO `income_values` (`income_id`, `yearmonth`, `value`, `description`, `created_at`, `updated_at`) VALUES (1, '2019-11-01', 2000, '11月', '2019-12-31 07:08:02.995904', '2019-12-31 07:08:02.995904')[0m
+  ↳ app/models/form/income_form.rb:30:in `block (2 levels) in save'
+  [1m[36mIncomeValue Create (0.4ms)[0m  [1m[32mINSERT INTO `income_values` (`income_id`, `yearmonth`, `value`, `description`, `created_at`, `updated_at`) VALUES (2, '2019-11-01', 10, '雑11月', '2019-12-31 07:08:03.003046', '2019-12-31 07:08:03.003046')[0m
+  ↳ app/models/form/income_form.rb:30:in `block (2 levels) in save'
+  [1m[36mIncomeValue Create (0.3ms)[0m  [1m[32mINSERT INTO `income_values` (`income_id`, `yearmonth`, `value`, `description`, `created_at`, `updated_at`) VALUES (3, '2019-11-01', 2, '利息11月', '2019-12-31 07:08:03.006101', '2019-12-31 07:08:03.006101')[0m
+  ↳ app/models/form/income_form.rb:30:in `block (2 levels) in save'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/form/income_form.rb:24:in `save'
+Redirected to http://localhost:3000/income_values
+Completed 302 Found in 84ms (ActiveRecord: 4.1ms | Allocations: 11430)
+
+
+Started GET "/income_values" for ::1 at 2019-12-31 16:08:03 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.4ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (1.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.3ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mCACHE Income Load (0.0ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mCACHE Income Load (0.0ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mCACHE Income Load (0.0ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 20.0ms | Allocations: 5804)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 80ms (Views: 76.7ms | ActiveRecord: 2.1ms | Allocations: 11314)
+
+
+Started GET "/" for ::1 at 2019-12-31 16:08:15 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 39.7ms | Allocations: 376)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 55ms (Views: 53.4ms | ActiveRecord: 0.0ms | Allocations: 4737)
+
+
+Started GET "/fixedcost_values" for ::1 at 2019-12-31 16:08:20 +0900
+Processing by FixedcostValuesController#index as HTML
+  Rendering fixedcost_values/index.html.erb within layouts/application
+  [1m[36mFixedcostValue Load (0.9ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/fixedcost_values/index.html.erb:10
+  Rendered fixedcost_values/index.html.erb within layouts/application (Duration: 46.5ms | Allocations: 1574)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 181ms (Views: 117.0ms | ActiveRecord: 32.9ms | Allocations: 10646)
+
+
+Started POST "/fixedcost_values/new" for ::1 at 2019-12-31 16:08:26 +0900
+Processing by FixedcostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"Ia4nP6vCqtFMQCRb+Gk021portqJ+59vFosnHgsZKQVWywakY6sZrpfuH4s7b2WJO0TaqLs76kpmZ+ptmnoYtA==", "yearmonth"=>"2019-12"}
+Completed 500 Internal Server Error in 5ms (ActiveRecord: 0.0ms | Allocations: 2360)
+
+
+  
+NameError (uninitialized constant FixedcostValuesController::Ficedcost):
+  
+app/controllers/fixedcost_values_controller.rb:15:in `new'
+Started POST "/fixedcost_values/new" for ::1 at 2019-12-31 16:14:44 +0900
+  [1m[35m (0.7ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by FixedcostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"Ia4nP6vCqtFMQCRb+Gk021portqJ+59vFosnHgsZKQVWywakY6sZrpfuH4s7b2WJO0TaqLs76kpmZ+ptmnoYtA==", "yearmonth"=>"2019-12"}
+Completed 500 Internal Server Error in 23ms (ActiveRecord: 0.0ms | Allocations: 3003)
+
+
+  
+SyntaxError (/home/hironoriogata/sample_kakeibo/app/models/form/fixedcost_form.rb:39: syntax error, unexpected end-of-input, expecting end):
+  
+app/models/form/fixedcost_form.rb:39: syntax error, unexpected end-of-input, expecting end
+app/models/form/fixedcost_form.rb:39: syntax error, unexpected end-of-input, expecting end
+app/models/form/fixedcost_form.rb:39: syntax error, unexpected end-of-input, expecting end
+app/controllers/fixedcost_values_controller.rb:17:in `new'
+Started POST "/fixedcost_values/new" for ::1 at 2019-12-31 16:23:54 +0900
+  [1m[35m (0.4ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by FixedcostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"Ia4nP6vCqtFMQCRb+Gk021portqJ+59vFosnHgsZKQVWywakY6sZrpfuH4s7b2WJO0TaqLs76kpmZ+ptmnoYtA==", "yearmonth"=>"2019-12"}
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 0.0ms | Allocations: 3923)
+
+
+  
+NameError (undefined local variable or method `serf' for #<Form::FixedcostForm:0x00007fafe046e320>
+Did you mean?  self):
+  
+app/models/form/fixedcost_form.rb:8:in `initialize'
+app/controllers/fixedcost_values_controller.rb:17:in `new'
+app/controllers/fixedcost_values_controller.rb:17:in `new'
+Started POST "/fixedcost_values/new" for ::1 at 2019-12-31 16:28:34 +0900
+Processing by FixedcostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"Ia4nP6vCqtFMQCRb+Gk021portqJ+59vFosnHgsZKQVWywakY6sZrpfuH4s7b2WJO0TaqLs76kpmZ+ptmnoYtA==", "yearmonth"=>"2019-12"}
+Completed 500 Internal Server Error in 44ms (ActiveRecord: 21.6ms | Allocations: 3618)
+
+
+  
+NameError (undefined local variable or method `serf' for #<Form::FixedcostForm:0x00007fafe058ec78>
+Did you mean?  self):
+  
+app/models/form/fixedcost_form.rb:8:in `initialize'
+app/controllers/fixedcost_values_controller.rb:17:in `new'
+app/controllers/fixedcost_values_controller.rb:17:in `new'
+Started POST "/fixedcost_values/new" for ::1 at 2019-12-31 16:37:12 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by FixedcostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"Ia4nP6vCqtFMQCRb+Gk021portqJ+59vFosnHgsZKQVWywakY6sZrpfuH4s7b2WJO0TaqLs76kpmZ+ptmnoYtA==", "yearmonth"=>"2019-12"}
+  [1m[36mFixedcost Load (0.6ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` ORDER BY `fixedcosts`.`created_at` ASC[0m
+  ↳ app/models/form/fixedcost_form.rb:8:in `map'
+  Rendering fixedcost_values/new.html.erb within layouts/application
+  [1m[36mFixedcost Load (0.6ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 1 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/new.html.erb:28
+  [1m[36mFixedcost Load (0.6ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 2 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/new.html.erb:28
+  Rendered fixedcost_values/new.html.erb within layouts/application (Duration: 43.6ms | Allocations: 3903)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 135ms (Views: 51.5ms | ActiveRecord: 25.7ms | Allocations: 18360)
+
+
+Started POST "/fixedcost_values" for ::1 at 2019-12-31 16:37:52 +0900
+Processing by FixedcostValuesController#create as HTML
+  Parameters: {"authenticity_token"=>"4wbf/WTl5KuUN8SfIs4GMpsjnFiU06GNvvXSNXrFI8LdTUyvYLD56wQRLHAAdbftzCXi1MLgElPO80TtAo9k4Q==", "form_fixedcost_form"=>{"fixedcost_values_attributes"=>{"0"=>{"fixedcost_id"=>"1", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"2000", "description"=>"電気12月"}, "1"=>{"fixedcost_id"=>"2", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"1000", "description"=>"水道12月"}}}, "commit"=>"Create Fixedcost form"}
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 0.0ms | Allocations: 2338)
+
+
+  
+NameError (uninitialized constant Form::FixedcostValue
+Did you mean?  Form::FixescostValue):
+  
+app/controllers/fixedcost_values_controller.rb:37:in `fixedcost_form_params'
+app/controllers/fixedcost_values_controller.rb:26:in `create'
+Started POST "/fixedcost_values" for ::1 at 2019-12-31 16:50:51 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by FixedcostValuesController#create as HTML
+  Parameters: {"authenticity_token"=>"4wbf/WTl5KuUN8SfIs4GMpsjnFiU06GNvvXSNXrFI8LdTUyvYLD56wQRLHAAdbftzCXi1MLgElPO80TtAo9k4Q==", "form_fixedcost_form"=>{"fixedcost_values_attributes"=>{"0"=>{"fixedcost_id"=>"1", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"2000", "description"=>"電気12月"}, "1"=>{"fixedcost_id"=>"2", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"1000", "description"=>"水道12月"}}}, "commit"=>"Create Fixedcost form"}
+Completed 500 Internal Server Error in 36ms (ActiveRecord: 0.0ms | Allocations: 4888)
+
+
+  
+NameError (uninitialized constant #<Class:0x00007fafe044d0a8>::REGISTRBLE_ATTRIBUTES
+Did you mean?  Form::FixedcostValue::REGISTRABLE_ATTRIBUTES):
+  
+app/controllers/fixedcost_values_controller.rb:37:in `fixedcost_form_params'
+app/controllers/fixedcost_values_controller.rb:26:in `create'
+Started GET "/" for ::1 at 2019-12-31 16:52:39 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 19ms (Views: 17.9ms | ActiveRecord: 0.0ms | Allocations: 4169)
+
+
+Started GET "/fixedcost_values" for ::1 at 2019-12-31 16:52:42 +0900
+Processing by FixedcostValuesController#index as HTML
+  Rendering fixedcost_values/index.html.erb within layouts/application
+  [1m[36mFixedcostValue Load (0.4ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/fixedcost_values/index.html.erb:10
+  Rendered fixedcost_values/index.html.erb within layouts/application (Duration: 6.0ms | Allocations: 1763)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 17.3ms | ActiveRecord: 0.4ms | Allocations: 6639)
+
+
+Started POST "/fixedcost_values/new" for ::1 at 2019-12-31 16:52:47 +0900
+Processing by FixedcostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"GBB98wePFx3SioGdu2Im44jZr5AW4hKQi5yKb+Svm7FvdVxoz+akYgkkuk14ZHex6fXb4iQiZ7X7cEccdcyqAA==", "yearmonth"=>"2019-12"}
+  [1m[36mFixedcost Load (0.2ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` ORDER BY `fixedcosts`.`created_at` ASC[0m
+  ↳ app/models/form/fixedcost_form.rb:8:in `map'
+  Rendering fixedcost_values/new.html.erb within layouts/application
+  [1m[36mFixedcost Load (0.3ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 1 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/new.html.erb:28
+  [1m[36mFixedcost Load (0.2ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 2 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/new.html.erb:28
+  Rendered fixedcost_values/new.html.erb within layouts/application (Duration: 12.1ms | Allocations: 3523)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 47ms (Views: 28.5ms | ActiveRecord: 0.7ms | Allocations: 14511)
+
+
+Started POST "/fixedcost_values" for ::1 at 2019-12-31 16:53:11 +0900
+Processing by FixedcostValuesController#create as HTML
+  Parameters: {"authenticity_token"=>"f1YBq7126SasypND+1+12P+4PBTZ8zidd8wLP+J6SyFBHZL5uSP0Zjzse6zZ5AQHqL5CmI/Ai0MHyp3nmjAMAg==", "form_fixedcost_form"=>{"fixedcost_values_attributes"=>{"0"=>{"fixedcost_id"=>"1", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"2000", "description"=>"電気12月"}, "1"=>{"fixedcost_id"=>"2", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"1000", "description"=>"水道12月"}}}, "commit"=>"Create Fixedcost form"}
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.0ms | Allocations: 2903)
+
+
+  
+NameError (uninitialized constant #<Class:0x00007fafe044d0a8>::REGISTRBLE_ATTRIBUTES
+Did you mean?  Form::FixedcostValue::REGISTRABLE_ATTRIBUTES):
+  
+app/controllers/fixedcost_values_controller.rb:37:in `fixedcost_form_params'
+app/controllers/fixedcost_values_controller.rb:26:in `create'
+Started POST "/fixedcost_values" for ::1 at 2019-12-31 16:53:53 +0900
+Processing by FixedcostValuesController#create as HTML
+  Parameters: {"authenticity_token"=>"f1YBq7126SasypND+1+12P+4PBTZ8zidd8wLP+J6SyFBHZL5uSP0Zjzse6zZ5AQHqL5CmI/Ai0MHyp3nmjAMAg==", "form_fixedcost_form"=>{"fixedcost_values_attributes"=>{"0"=>{"fixedcost_id"=>"1", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"2000", "description"=>"電気12月"}, "1"=>{"fixedcost_id"=>"2", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"1000", "description"=>"水道12月"}}}, "commit"=>"Create Fixedcost form"}
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 27.5ms | Allocations: 12351)
+
+
+  
+ActiveModel::UnknownAttributeError (unknown attribute 'foxedcost_id' for FixedcostValue.):
+  
+app/models/form/fixedcost_form.rb:27:in `block (2 levels) in save'
+app/models/form/fixedcost_form.rb:26:in `select'
+app/models/form/fixedcost_form.rb:26:in `each'
+app/models/form/fixedcost_form.rb:26:in `block in save'
+app/models/form/fixedcost_form.rb:25:in `save'
+app/controllers/fixedcost_values_controller.rb:27:in `create'
+Started POST "/fixedcost_values" for ::1 at 2019-12-31 17:07:09 +0900
+  [1m[35m (1.1ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by FixedcostValuesController#create as HTML
+  Parameters: {"authenticity_token"=>"f1YBq7126SasypND+1+12P+4PBTZ8zidd8wLP+J6SyFBHZL5uSP0Zjzse6zZ5AQHqL5CmI/Ai0MHyp3nmjAMAg==", "form_fixedcost_form"=>{"fixedcost_values_attributes"=>{"0"=>{"fixedcost_id"=>"1", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"2000", "description"=>"電気12月"}, "1"=>{"fixedcost_id"=>"2", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"1000", "description"=>"水道12月"}}}, "commit"=>"Create Fixedcost form"}
+  [1m[35m (0.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/form/fixedcost_form.rb:31:in `block (2 levels) in save'
+  [1m[36mFixedcostValue Create (1.8ms)[0m  [1m[32mINSERT INTO `fixedcost_values` (`fixedcost_id`, `yearmonth`, `value`, `description`, `created_at`, `updated_at`) VALUES (1, '2019-12-01', 2000, '電気12月', '2019-12-31 08:07:09.503999', '2019-12-31 08:07:09.503999')[0m
+  ↳ app/models/form/fixedcost_form.rb:31:in `block (2 levels) in save'
+  [1m[36mFixedcostValue Create (0.3ms)[0m  [1m[32mINSERT INTO `fixedcost_values` (`fixedcost_id`, `yearmonth`, `value`, `description`, `created_at`, `updated_at`) VALUES (2, '2019-12-01', 1000, '水道12月', '2019-12-31 08:07:09.513940', '2019-12-31 08:07:09.513940')[0m
+  ↳ app/models/form/fixedcost_form.rb:31:in `block (2 levels) in save'
+  [1m[35m (1.8ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/form/fixedcost_form.rb:25:in `save'
+Redirected to http://localhost:3000/fixedcost_values
+Completed 302 Found in 75ms (ActiveRecord: 4.2ms | Allocations: 15029)
+
+
+Started GET "/fixedcost_values" for ::1 at 2019-12-31 17:07:09 +0900
+Processing by FixedcostValuesController#index as HTML
+  Rendering fixedcost_values/index.html.erb within layouts/application
+  [1m[36mFixedcostValue Load (1.6ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/fixedcost_values/index.html.erb:10
+  [1m[36mFixedcost Load (0.1ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 1 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/index.html.erb:21
+  [1m[36mFixedcost Load (0.2ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 2 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/index.html.erb:21
+  Rendered fixedcost_values/index.html.erb within layouts/application (Duration: 31.7ms | Allocations: 6219)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 127ms (Views: 123.4ms | ActiveRecord: 2.4ms | Allocations: 13323)
+
+
+Started GET "/fixedcost_values/1/edit" for ::1 at 2019-12-31 17:07:15 +0900
+Processing by FixedcostValuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+Completed 500 Internal Server Error in 208ms (ActiveRecord: 0.0ms | Allocations: 97998)
+
+
+  
+NameError (undefined local variable or method `pamams' for #<FixedcostValuesController:0x00007ffff5994420>
+Did you mean?  params):
+  
+app/controllers/fixedcost_values_controller.rb:21:in `edit'
+Started GET "/fixedcost_values/1/edit" for ::1 at 2019-12-31 17:08:24 +0900
+Processing by FixedcostValuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFixedcostValue Load (0.8ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:21:in `edit'
+Completed 500 Internal Server Error in 31ms (ActiveRecord: 16.2ms | Allocations: 6912)
+
+
+  
+NoMethodError (undefined method `fixedcost_id' for nil:NilClass):
+  
+app/controllers/fixedcost_values_controller.rb:22:in `edit'
+Started GET "/fixedcost_values/1/edit" for ::1 at 2019-12-31 17:12:29 +0900
+Processing by FixedcostValuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFixedcostValue Load (0.2ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:21:in `edit'
+  [1m[36mFixedcost Load (0.9ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:22:in `edit'
+  Rendering fixedcost_values/edit.html.erb within layouts/application
+  Rendered fixedcost_values/edit.html.erb within layouts/application (Duration: 26.3ms | Allocations: 1058)
+Completed 500 Internal Server Error in 80ms (ActiveRecord: 29.8ms | Allocations: 11475)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2>固定費科目データ修正</h2>
+
+    <%= form_for @fixedcost_value do |form| %>
+    <table>
+        <tr>
+            <th>登録日</th>
+            <th>名称</th>
+            <th>値</th>
+            <th>備考</th>
+        </tr>
+
+        <tr>
+            <td><%= form.date_select :yearmonth,
+                start_year: 2010, end_year: Time,current.year,
+                use_month_numbers: true, discard_day: true %></td>
+            <th><%= @fixedcost.name %></th>
+            <td><%= form.text_field :value %></td>
+            <td><%= form.text_field :description %></td>
+        </tr>
+    </table>
+    <div><%= form.submit %></div>
+    <% end %>
+):
+1:    <h2>固定費科目データ修正</h2>
+2:    
+3:        <%= form_for @fixedcost_value do |form| %>
+4:        <table>
+5:            <tr>
+6:                <th>登録日</th>
+7:                <th>名称</th>
+8:                <th>値</th>
+9:                <th>備考</th>
+10:            </tr>
+11:    
+12:            <tr>
+13:                <td><%= form.date_select :yearmonth,
+14:                    start_year: 2010, end_year: Time,current.year,
+15:                    use_month_numbers: true, discard_day: true %></td>
+16:                <th><%= @fixedcost.name %></th>
+17:                <td><%= form.text_field :value %></td>
+18:                <td><%= form.text_field :description %></td>
+19:            </tr>
+20:        </table>
+21:        <div><%= form.submit %></div>
+22:        <% end %>
+  
+app/views/fixedcost_values/edit.html.erb:14: syntax error, unexpected ',', expecting =>
+app/views/fixedcost_values/edit.html.erb:15: Can't assign to true
+app/views/fixedcost_values/edit.html.erb:14: syntax error, unexpected ',', expecting =>
+app/views/fixedcost_values/edit.html.erb:15: Can't assign to true
+app/views/fixedcost_values/edit.html.erb:14: syntax error, unexpected ',', expecting =>
+app/views/fixedcost_values/edit.html.erb:15: Can't assign to true
+app/views/fixedcost_values/edit.html.erb:14: syntax error, unexpected ',', expecting =>
+app/views/fixedcost_values/edit.html.erb:15: Can't assign to true
+app/views/fixedcost_values/edit.html.erb:14: syntax error, unexpected ',', expecting =>
+app/views/fixedcost_values/edit.html.erb:15: Can't assign to true
+app/views/fixedcost_values/edit.html.erb:14: syntax error, unexpected ',', expecting =>
+app/views/fixedcost_values/edit.html.erb:15: Can't assign to true
+Started GET "/" for ::1 at 2019-12-31 17:13:03 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 0.5ms | Allocations: 183)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 43ms (Views: 42.1ms | ActiveRecord: 0.0ms | Allocations: 4799)
+
+
+Started GET "/fixedcost_values" for ::1 at 2019-12-31 17:13:07 +0900
+Processing by FixedcostValuesController#index as HTML
+  Rendering fixedcost_values/index.html.erb within layouts/application
+  [1m[36mFixedcostValue Load (0.3ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/fixedcost_values/index.html.erb:10
+  [1m[36mFixedcost Load (0.2ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 1 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/index.html.erb:21
+  [1m[36mFixedcost Load (0.6ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 2 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/index.html.erb:21
+  Rendered fixedcost_values/index.html.erb within layouts/application (Duration: 14.1ms | Allocations: 3487)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 32ms (Views: 30.0ms | ActiveRecord: 1.1ms | Allocations: 7382)
+
+
+Started GET "/fixedcost_values/1/edit" for ::1 at 2019-12-31 17:13:09 +0900
+Processing by FixedcostValuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFixedcostValue Load (0.3ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:21:in `edit'
+  [1m[36mFixedcost Load (0.3ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:22:in `edit'
+  Rendering fixedcost_values/edit.html.erb within layouts/application
+  Rendered fixedcost_values/edit.html.erb within layouts/application (Duration: 3.5ms | Allocations: 1083)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.6ms | Allocations: 2665)
+
+
+  
+ActionView::SyntaxErrorInTemplate (Encountered a syntax error while rendering template: check <h2>固定費科目データ修正</h2>
+
+    <%= form_for @fixedcost_value do |form| %>
+    <table>
+        <tr>
+            <th>登録日</th>
+            <th>名称</th>
+            <th>値</th>
+            <th>備考</th>
+        </tr>
+
+        <tr>
+            <td><%= form.date_select :yearmonth,
+                start_year: 2010, end_year: Time,current.year,
+                use_month_numbers: true, discard_day: true %></td>
+            <th><%= @fixedcost.name %></th>
+            <td><%= form.text_field :value %></td>
+            <td><%= form.text_field :description %></td>
+        </tr>
+    </table>
+    <div><%= form.submit %></div>
+    <% end %>
+):
+1:    <h2>固定費科目データ修正</h2>
+2:    
+3:        <%= form_for @fixedcost_value do |form| %>
+4:        <table>
+5:            <tr>
+6:                <th>登録日</th>
+7:                <th>名称</th>
+8:                <th>値</th>
+9:                <th>備考</th>
+10:            </tr>
+11:    
+12:            <tr>
+13:                <td><%= form.date_select :yearmonth,
+14:                    start_year: 2010, end_year: Time,current.year,
+15:                    use_month_numbers: true, discard_day: true %></td>
+16:                <th><%= @fixedcost.name %></th>
+17:                <td><%= form.text_field :value %></td>
+18:                <td><%= form.text_field :description %></td>
+19:            </tr>
+20:        </table>
+21:        <div><%= form.submit %></div>
+22:        <% end %>
+  
+app/views/fixedcost_values/edit.html.erb:14: syntax error, unexpected ',', expecting =>
+app/views/fixedcost_values/edit.html.erb:15: Can't assign to true
+app/views/fixedcost_values/edit.html.erb:14: syntax error, unexpected ',', expecting =>
+app/views/fixedcost_values/edit.html.erb:15: Can't assign to true
+app/views/fixedcost_values/edit.html.erb:14: syntax error, unexpected ',', expecting =>
+app/views/fixedcost_values/edit.html.erb:15: Can't assign to true
+app/views/fixedcost_values/edit.html.erb:14: syntax error, unexpected ',', expecting =>
+app/views/fixedcost_values/edit.html.erb:15: Can't assign to true
+app/views/fixedcost_values/edit.html.erb:14: syntax error, unexpected ',', expecting =>
+app/views/fixedcost_values/edit.html.erb:15: Can't assign to true
+app/views/fixedcost_values/edit.html.erb:14: syntax error, unexpected ',', expecting =>
+app/views/fixedcost_values/edit.html.erb:15: Can't assign to true
+Started GET "/fixedcost_values/1/edit" for ::1 at 2019-12-31 17:20:21 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by FixedcostValuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mFixedcostValue Load (0.2ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:21:in `edit'
+  [1m[36mFixedcost Load (0.3ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:22:in `edit'
+  Rendering fixedcost_values/edit.html.erb within layouts/application
+  Rendered fixedcost_values/edit.html.erb within layouts/application (Duration: 25.8ms | Allocations: 1257)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 65ms (Views: 59.7ms | ActiveRecord: 0.5ms | Allocations: 7108)
+
+
+Started PATCH "/fixedcost_values/1" for ::1 at 2019-12-31 17:20:31 +0900
+Processing by FixedcostValuesController#update as HTML
+  Parameters: {"authenticity_token"=>"V1QrqzTKZzuXhnFuU2eLvcU/QN5R2IiwWL7OLiodDv5pH7j5MJ96ewegmYFx3Dpikjk+UgfrO24ouFj2UldJ3Q==", "fixedcost_value"=>{"yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"2500", "description"=>"電気12月"}, "commit"=>"Update Fixedcost value", "id"=>"1"}
+  [1m[36mFixedcostValue Load (0.2ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:41:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:43:in `update'
+  [1m[36mFixedcostValue Update (0.6ms)[0m  [1m[33mUPDATE `fixedcost_values` SET `fixedcost_values`.`value` = 2500, `fixedcost_values`.`updated_at` = '2019-12-31 08:20:31.968175' WHERE `fixedcost_values`.`id` = 1[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:43:in `update'
+  [1m[35m (1.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:43:in `update'
+Redirected to http://localhost:3000/fixedcost_values
+Completed 302 Found in 12ms (ActiveRecord: 2.9ms | Allocations: 3202)
+
+
+Started GET "/fixedcost_values" for ::1 at 2019-12-31 17:20:31 +0900
+Processing by FixedcostValuesController#index as HTML
+  Rendering fixedcost_values/index.html.erb within layouts/application
+  [1m[36mFixedcostValue Load (0.6ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/fixedcost_values/index.html.erb:10
+  [1m[36mFixedcost Load (0.3ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 1 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/index.html.erb:21
+  [1m[36mFixedcost Load (0.2ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 2 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/index.html.erb:21
+  Rendered fixedcost_values/index.html.erb within layouts/application (Duration: 10.5ms | Allocations: 2975)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 27.8ms | ActiveRecord: 1.1ms | Allocations: 7175)
+
+
+Started GET "/fixedcost_values/2/edit" for ::1 at 2019-12-31 17:20:35 +0900
+Processing by FixedcostValuesController#edit as HTML
+  Parameters: {"id"=>"2"}
+  [1m[36mFixedcostValue Load (0.7ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:21:in `edit'
+  [1m[36mFixedcost Load (0.6ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:22:in `edit'
+  Rendering fixedcost_values/edit.html.erb within layouts/application
+  Rendered fixedcost_values/edit.html.erb within layouts/application (Duration: 1.8ms | Allocations: 1018)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 10.9ms | ActiveRecord: 1.3ms | Allocations: 5891)
+
+
+Started PATCH "/fixedcost_values/2" for ::1 at 2019-12-31 17:20:36 +0900
+Processing by FixedcostValuesController#update as HTML
+  Parameters: {"authenticity_token"=>"jOnZu/FL5kAi/huUKVg5DLDmVCKzmCviG2m5e97Ca0XkXlDQBBe3LQWYB6iPGMl7p5n89QY6yB+Idj0maHn1rQ==", "fixedcost_value"=>{"yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"1000", "description"=>"水道12月"}, "commit"=>"Update Fixedcost value", "id"=>"2"}
+  [1m[36mFixedcostValue Load (0.2ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`id` = 2 LIMIT 1[0m
+  ↳ app/controllers/fixedcost_values_controller.rb:41:in `update'
+Redirected to http://localhost:3000/fixedcost_values
+Completed 302 Found in 5ms (ActiveRecord: 0.2ms | Allocations: 1194)
+
+
+Started GET "/fixedcost_values" for ::1 at 2019-12-31 17:20:36 +0900
+Processing by FixedcostValuesController#index as HTML
+  Rendering fixedcost_values/index.html.erb within layouts/application
+  [1m[36mFixedcostValue Load (0.3ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/fixedcost_values/index.html.erb:10
+  [1m[36mFixedcost Load (0.3ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 1 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/index.html.erb:21
+  [1m[36mFixedcost Load (0.3ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 2 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/index.html.erb:21
+  Rendered fixedcost_values/index.html.erb within layouts/application (Duration: 9.6ms | Allocations: 2643)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 30ms (Views: 27.3ms | ActiveRecord: 0.9ms | Allocations: 6632)
+
+
+Started GET "/" for ::1 at 2019-12-31 17:30:45 +0900
+  [1m[35m (0.3ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.8ms | Allocations: 371)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 38ms (Views: 35.8ms | ActiveRecord: 0.0ms | Allocations: 5196)
+
+
+Started GET "/variablecost_values" for ::1 at 2019-12-31 17:30:48 +0900
+Processing by VariablecostValuesController#index as HTML
+  Rendering variablecost_values/index.html.erb within layouts/application
+  [1m[36mVariablecostValue Load (0.7ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/variablecost_values/index.html.erb:12
+  Rendered variablecost_values/index.html.erb within layouts/application (Duration: 50.8ms | Allocations: 1672)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 51.1ms | ActiveRecord: 25.2ms | Allocations: 7549)
+
+
+Started POST "/variablecost_values/new" for ::1 at 2019-12-31 17:30:53 +0900
+Processing by VariablecostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"lr35/T6oa/4S/V9ig3qbe+RZEi9PPtnJ5DrJ0wh1JrwChpbK6V2McGFVuqM9sHteKgRULkwopkHS4sEzfoO0Lw==", "yearmonth"=>"2019-12"}
+Completed 500 Internal Server Error in 11ms (ActiveRecord: 0.0ms | Allocations: 1745)
+
+
+  
+SyntaxError (/home/hironoriogata/sample_kakeibo/app/models/form/variablecost_form.rb:34: syntax error, unexpected end-of-input, expecting end):
+  
+app/models/form/variablecost_form.rb:34: syntax error, unexpected end-of-input, expecting end
+app/models/form/variablecost_form.rb:34: syntax error, unexpected end-of-input, expecting end
+app/models/form/variablecost_form.rb:34: syntax error, unexpected end-of-input, expecting end
+app/controllers/variablecost_values_controller.rb:16:in `new'
+Started POST "/variablecost_values/new" for ::1 at 2019-12-31 17:31:49 +0900
+  
+SyntaxError (/home/hironoriogata/sample_kakeibo/app/controllers/variablecost_values_controller.rb:57: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/variablecost_values_controller.rb:57: syntax error, unexpected end, expecting end-of-input
+app/controllers/variablecost_values_controller.rb:57: syntax error, unexpected end, expecting end-of-input
+app/controllers/variablecost_values_controller.rb:57: syntax error, unexpected end, expecting end-of-input
+Started POST "/variablecost_values/new" for ::1 at 2019-12-31 17:37:47 +0900
+  [1m[35m (1.0ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  
+SyntaxError (/home/hironoriogata/sample_kakeibo/app/controllers/variablecost_values_controller.rb:57: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/variablecost_values_controller.rb:57: syntax error, unexpected end, expecting end-of-input
+app/controllers/variablecost_values_controller.rb:57: syntax error, unexpected end, expecting end-of-input
+app/controllers/variablecost_values_controller.rb:57: syntax error, unexpected end, expecting end-of-input
+Started POST "/variablecost_values/new" for ::1 at 2019-12-31 17:42:43 +0900
+  
+SyntaxError (/home/hironoriogata/sample_kakeibo/app/controllers/variablecost_values_controller.rb:57: syntax error, unexpected end, expecting end-of-input):
+  
+app/controllers/variablecost_values_controller.rb:57: syntax error, unexpected end, expecting end-of-input
+app/controllers/variablecost_values_controller.rb:57: syntax error, unexpected end, expecting end-of-input
+app/controllers/variablecost_values_controller.rb:57: syntax error, unexpected end, expecting end-of-input
+Started POST "/variablecost_values/new" for ::1 at 2019-12-31 17:46:12 +0900
+Processing by VariablecostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"IQoMqIL1HKFykUN2JA4nXD4rJkYy3d9NLzTsI0j1txMfQZ/6hqAB4eK3q5kGtZaDaS1YymTubJNfMnr7ML/wMA==", "yearmonth"=>"2019-12"}
+Completed 500 Internal Server Error in 30ms (ActiveRecord: 17.2ms | Allocations: 3113)
+
+
+  
+SyntaxError (/home/hironoriogata/sample_kakeibo/app/models/form/variablecost_form.rb:34: syntax error, unexpected end-of-input, expecting end):
+  
+app/models/form/variablecost_form.rb:34: syntax error, unexpected end-of-input, expecting end
+app/models/form/variablecost_form.rb:34: syntax error, unexpected end-of-input, expecting end
+app/models/form/variablecost_form.rb:34: syntax error, unexpected end-of-input, expecting end
+app/controllers/variablecost_values_controller.rb:16:in `new'
+Started POST "/variablecost_values/new" for ::1 at 2019-12-31 17:47:26 +0900
+Processing by VariablecostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"IQoMqIL1HKFykUN2JA4nXD4rJkYy3d9NLzTsI0j1txMfQZ/6hqAB4eK3q5kGtZaDaS1YymTubJNfMnr7ML/wMA==", "yearmonth"=>"2019-12"}
+Completed 500 Internal Server Error in 42ms (ActiveRecord: 19.0ms | Allocations: 2847)
+
+
+  
+Zeitwerk::NameError (expected file /home/hironoriogata/sample_kakeibo/app/models/form/variablecost_form.rb to define constant Form::VariablecostForm, but didn't):
+  
+app/controllers/variablecost_values_controller.rb:16:in `new'
+Started POST "/variablecost_values/new" for ::1 at 2019-12-31 17:49:21 +0900
+Processing by VariablecostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"IQoMqIL1HKFykUN2JA4nXD4rJkYy3d9NLzTsI0j1txMfQZ/6hqAB4eK3q5kGtZaDaS1YymTubJNfMnr7ML/wMA==", "yearmonth"=>"2019-12"}
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 27.7ms | Allocations: 3794)
+
+
+  
+NameError (undefined local variable or method `variablecost_value' for #<Form::VariablecostForm:0x00007fafe087b940>
+Did you mean?  variablecost_values
+               variablecost_values=):
+  
+app/models/form/variablecost_form.rb:8:in `initialize'
+app/controllers/variablecost_values_controller.rb:16:in `new'
+app/controllers/variablecost_values_controller.rb:16:in `new'
+Started POST "/variablecost_values/new" for ::1 at 2019-12-31 17:54:41 +0900
+Processing by VariablecostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"IQoMqIL1HKFykUN2JA4nXD4rJkYy3d9NLzTsI0j1txMfQZ/6hqAB4eK3q5kGtZaDaS1YymTubJNfMnr7ML/wMA==", "yearmonth"=>"2019-12"}
+  [1m[36mVariablecost Load (0.6ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC[0m
+  ↳ app/models/form/variablecost_form.rb:8:in `map'
+  Rendering variablecost_values/new.html.erb within layouts/application
+  [1m[36mVariablecost Load (0.4ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  Rendered variablecost_values/new.html.erb within layouts/application (Duration: 336.0ms | Allocations: 162238)
+Completed 500 Internal Server Error in 421ms (ActiveRecord: 36.9ms | Allocations: 173234)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `variablecost_id' for #<#<Class:0x00007fafe02202a8>:0x00007fafe022e808>
+Did you mean?  variablecost_url
+               variablecosts_url
+               variablecost_path
+               @variablecosts):
+    25:     </tr>
+    26: 
+    27:     <th>
+    28:     <%= @variablecosts.find(@form.variablecost_values[cnt],variablecost_id).name %>
+    29:     </th>
+    30:     <% cnt+=1 %>
+    31:     <td><%= f.text_field :value, size: 8 %></td>
+  
+app/views/variablecost_values/new.html.erb:28
+app/views/variablecost_values/new.html.erb:16
+app/views/variablecost_values/new.html.erb:4
+Started POST "/variablecost_values/new" for ::1 at 2019-12-31 17:58:02 +0900
+Processing by VariablecostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"IQoMqIL1HKFykUN2JA4nXD4rJkYy3d9NLzTsI0j1txMfQZ/6hqAB4eK3q5kGtZaDaS1YymTubJNfMnr7ML/wMA==", "yearmonth"=>"2019-12"}
+  [1m[36mVariablecost Load (0.2ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC[0m
+  ↳ app/models/form/variablecost_form.rb:8:in `map'
+  Rendering variablecost_values/new.html.erb within layouts/application
+  [1m[36mVariablecost Load (0.3ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  [1m[36mCACHE Variablecost Load (0.0ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC LIMIT 11[0m
+  Rendered variablecost_values/new.html.erb within layouts/application (Duration: 398.2ms | Allocations: 161431)
+Completed 500 Internal Server Error in 412ms (ActiveRecord: 0.7ms | Allocations: 163395)
+
+
+  
+ActionView::Template::Error (undefined local variable or method `variablecost_id' for #<#<Class:0x00007fafe0666498>:0x00007fafe0664738>
+Did you mean?  variablecost_url
+               variablecosts_url
+               variablecost_path
+               @variablecosts):
+    25:     </tr>
+    26: 
+    27:     <th>
+    28:     <%= @variablecosts.find(@form.variablecost_values[cnt],variablecost_id).name %>
+    29:     </th>
+    30:     <% cnt+=1 %>
+    31:     <td><%= f.text_field :value, size: 8 %></td>
+  
+app/views/variablecost_values/new.html.erb:28
+app/views/variablecost_values/new.html.erb:16
+app/views/variablecost_values/new.html.erb:4
+Started POST "/variablecost_values/new" for ::1 at 2019-12-31 17:59:11 +0900
+Processing by VariablecostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"IQoMqIL1HKFykUN2JA4nXD4rJkYy3d9NLzTsI0j1txMfQZ/6hqAB4eK3q5kGtZaDaS1YymTubJNfMnr7ML/wMA==", "yearmonth"=>"2019-12"}
+  [1m[36mVariablecost Load (0.2ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC[0m
+  ↳ app/models/form/variablecost_form.rb:8:in `map'
+  Rendering variablecost_values/new.html.erb within layouts/application
+  [1m[36mVariablecost Load (0.4ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` WHERE `variablecosts`.`id` = 1 ORDER BY `variablecosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/variablecost_values/new.html.erb:28
+  Rendered variablecost_values/new.html.erb within layouts/application (Duration: 70.1ms | Allocations: 2736)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 94ms (Views: 90.5ms | ActiveRecord: 0.7ms | Allocations: 8215)
+
+
+Started GET "/variablecost_values" for ::1 at 2019-12-31 17:59:24 +0900
+Processing by VariablecostValuesController#index as HTML
+  Rendering variablecost_values/index.html.erb within layouts/application
+  [1m[36mVariablecostValue Load (3.4ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/variablecost_values/index.html.erb:12
+  Rendered variablecost_values/index.html.erb within layouts/application (Duration: 18.4ms | Allocations: 1889)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 77ms (Views: 67.6ms | ActiveRecord: 3.4ms | Allocations: 6219)
+
+
+Started POST "/variablecost_values/new" for ::1 at 2019-12-31 17:59:29 +0900
+Processing by VariablecostValuesController#new as HTML
+  Parameters: {"authenticity_token"=>"luwhS84DEuqFSzPCw4tEKRRYLRbCc624SDnA8r1csLIC1058Gfb1ZPbj1gN9QaQM2gVrF8Fl0jB+4cgSy6oiIQ==", "yearmonth"=>"2019-12"}
+  [1m[36mVariablecost Load (5.2ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC[0m
+  ↳ app/models/form/variablecost_form.rb:8:in `map'
+  Rendering variablecost_values/new.html.erb within layouts/application
+  [1m[36mVariablecost Load (1.5ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` WHERE `variablecosts`.`id` = 1 ORDER BY `variablecosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/variablecost_values/new.html.erb:28
+  Rendered variablecost_values/new.html.erb within layouts/application (Duration: 10.9ms | Allocations: 2297)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 199ms (Views: 179.4ms | ActiveRecord: 6.8ms | Allocations: 9443)
+
+
+Started POST "/variablecost_values" for ::1 at 2019-12-31 18:00:40 +0900
+Processing by VariablecostValuesController#create as HTML
+  Parameters: {"authenticity_token"=>"6vZwwd+2F2qdKdS3SQjD/gO7STfC7Jt8CvokgDqXwtrUveOT2+MKKg0PPFhrs3IhVL03u5TfKKJ6/LJYQt2F+Q==", "form_variablecost_form"=>{"variablecost_values_attributes"=>{"0"=>{"variablecost_id"=>"1", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"31", "value"=>"500", "description"=>"材料12月"}}}, "commit"=>"Create Variablecost form"}
+Completed 500 Internal Server Error in 71ms (ActiveRecord: 0.0ms | Allocations: 8707)
+
+
+  
+NoMethodError (undefined method `year_month' for #<Form::VariablecostValue:0x00007fafe06841c8>
+Did you mean?  yearmonth
+               yearmonth?
+               yearmonth=):
+  
+app/models/form/variablecost_form.rb:28:in `block (2 levels) in save'
+app/models/form/variablecost_form.rb:26:in `select'
+app/models/form/variablecost_form.rb:26:in `each'
+app/models/form/variablecost_form.rb:26:in `block in save'
+app/models/form/variablecost_form.rb:25:in `save'
+app/controllers/variablecost_values_controller.rb:26:in `create'
+Started POST "/variablecost_values" for ::1 at 2019-12-31 18:02:57 +0900
+Processing by VariablecostValuesController#create as HTML
+  Parameters: {"authenticity_token"=>"6vZwwd+2F2qdKdS3SQjD/gO7STfC7Jt8CvokgDqXwtrUveOT2+MKKg0PPFhrs3IhVL03u5TfKKJ6/LJYQt2F+Q==", "form_variablecost_form"=>{"variablecost_values_attributes"=>{"0"=>{"variablecost_id"=>"1", "yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"31", "value"=>"500", "description"=>"材料12月"}}}, "commit"=>"Create Variablecost form"}
+  [1m[35m (0.7ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/models/form/variablecost_form.rb:31:in `block (2 levels) in save'
+  [1m[36mVariablecostValue Create (0.5ms)[0m  [1m[32mINSERT INTO `variablecost_values` (`variablecost_id`, `yearmonth`, `value`, `description`, `created_at`, `updated_at`) VALUES (1, '2019-12-31', 500, '材料12月', '2019-12-31 09:02:57.877766', '2019-12-31 09:02:57.877766')[0m
+  ↳ app/models/form/variablecost_form.rb:31:in `block (2 levels) in save'
+  [1m[35m (2.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/models/form/variablecost_form.rb:25:in `save'
+Redirected to http://localhost:3000/variablecost_values
+Completed 302 Found in 96ms (ActiveRecord: 29.2ms | Allocations: 13884)
+
+
+Started GET "/variablecost_values" for ::1 at 2019-12-31 18:02:57 +0900
+Processing by VariablecostValuesController#index as HTML
+  Rendering variablecost_values/index.html.erb within layouts/application
+  [1m[36mVariablecostValue Load (0.5ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/variablecost_values/index.html.erb:12
+  [1m[36mVariablecost Load (0.2ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` WHERE `variablecosts`.`id` = 1 ORDER BY `variablecosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/variablecost_values/index.html.erb:23
+  Rendered variablecost_values/index.html.erb within layouts/application (Duration: 9.4ms | Allocations: 5262)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 37ms (Views: 33.0ms | ActiveRecord: 1.2ms | Allocations: 9765)
+
+
+Started GET "/variablecost_values/1/edit" for ::1 at 2019-12-31 18:03:04 +0900
+Processing by VariablecostValuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVariablecostValue Load (3.1ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/variablecost_values_controller.rb:20:in `edit'
+  [1m[36mVariablecost Load (0.5ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` WHERE `variablecosts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/variablecost_values_controller.rb:21:in `edit'
+  Rendering variablecost_values/edit.html.erb within layouts/application
+  Rendered variablecost_values/edit.html.erb within layouts/application (Duration: 19.1ms | Allocations: 1256)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 52ms (Views: 27.5ms | ActiveRecord: 3.6ms | Allocations: 6512)
+
+
+Started PATCH "/variablecost_values/1" for ::1 at 2019-12-31 18:03:10 +0900
+Processing by VariablecostValuesController#update as HTML
+  Parameters: {"authenticity_token"=>"ZDWZcCrZa3rdlqmjplo1TfC6KM3WdjSWcOTIeJI9V+fW6ai9ZXbNj9C5Uu1zdC77waLiXI1MAmMku2aOmLNHow==", "variablecost_value"=>{"yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"500", "description"=>"材料12月"}, "commit"=>"Update Variablecost value", "id"=>"1"}
+  [1m[36mVariablecostValue Load (0.2ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/variablecost_values_controller.rb:40:in `update'
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/variablecost_values_controller.rb:42:in `update'
+  [1m[36mVariablecostValue Update (0.5ms)[0m  [1m[33mUPDATE `variablecost_values` SET `variablecost_values`.`yearmonth` = '2019-12-01', `variablecost_values`.`updated_at` = '2019-12-31 09:03:10.465925' WHERE `variablecost_values`.`id` = 1[0m
+  ↳ app/controllers/variablecost_values_controller.rb:42:in `update'
+  [1m[35m (8.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/variablecost_values_controller.rb:42:in `update'
+Redirected to http://localhost:3000/variablecost_values
+Completed 302 Found in 18ms (ActiveRecord: 9.7ms | Allocations: 3203)
+
+
+Started GET "/variablecost_values" for ::1 at 2019-12-31 18:03:10 +0900
+Processing by VariablecostValuesController#index as HTML
+  Rendering variablecost_values/index.html.erb within layouts/application
+  [1m[36mVariablecostValue Load (0.5ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/variablecost_values/index.html.erb:12
+  [1m[36mVariablecost Load (0.9ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` WHERE `variablecosts`.`id` = 1 ORDER BY `variablecosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/variablecost_values/index.html.erb:23
+  Rendered variablecost_values/index.html.erb within layouts/application (Duration: 6.5ms | Allocations: 1726)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 27ms (Views: 24.3ms | ActiveRecord: 1.4ms | Allocations: 5576)
+
+
+Started GET "/variablecost_values/1/edit" for ::1 at 2019-12-31 18:03:15 +0900
+Processing by VariablecostValuesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mVariablecostValue Load (0.5ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/variablecost_values_controller.rb:20:in `edit'
+  [1m[36mVariablecost Load (0.2ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` WHERE `variablecosts`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/variablecost_values_controller.rb:21:in `edit'
+  Rendering variablecost_values/edit.html.erb within layouts/application
+  Rendered variablecost_values/edit.html.erb within layouts/application (Duration: 4.9ms | Allocations: 1019)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 18ms (Views: 14.1ms | ActiveRecord: 0.7ms | Allocations: 5869)
+
+
+Started PATCH "/variablecost_values/1" for ::1 at 2019-12-31 18:03:21 +0900
+Processing by VariablecostValuesController#update as HTML
+  Parameters: {"authenticity_token"=>"DefdvtB8wEvUC1xScSEm5La/YGazzwdVAIDNBP1d/tW/O+xzn9NmvtkkpxykDz1Sh6eq9+j1MaBU32Py99PukQ==", "variablecost_value"=>{"yearmonth(1i)"=>"2019", "yearmonth(2i)"=>"12", "yearmonth(3i)"=>"1", "value"=>"5000", "description"=>"材料12月"}, "commit"=>"Update Variablecost value", "id"=>"1"}
+  [1m[36mVariablecostValue Load (0.3ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`id` = 1 LIMIT 1[0m
+  ↳ app/controllers/variablecost_values_controller.rb:40:in `update'
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/variablecost_values_controller.rb:42:in `update'
+  [1m[36mVariablecostValue Update (0.4ms)[0m  [1m[33mUPDATE `variablecost_values` SET `variablecost_values`.`value` = 5000, `variablecost_values`.`updated_at` = '2019-12-31 09:03:21.278788' WHERE `variablecost_values`.`id` = 1[0m
+  ↳ app/controllers/variablecost_values_controller.rb:42:in `update'
+  [1m[35m (4.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/variablecost_values_controller.rb:42:in `update'
+Redirected to http://localhost:3000/variablecost_values
+Completed 302 Found in 17ms (ActiveRecord: 5.8ms | Allocations: 3205)
+
+
+Started GET "/variablecost_values" for ::1 at 2019-12-31 18:03:21 +0900
+Processing by VariablecostValuesController#index as HTML
+  Rendering variablecost_values/index.html.erb within layouts/application
+  [1m[36mVariablecostValue Load (0.5ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/variablecost_values/index.html.erb:12
+  [1m[36mVariablecost Load (0.3ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` WHERE `variablecosts`.`id` = 1 ORDER BY `variablecosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/variablecost_values/index.html.erb:23
+  Rendered variablecost_values/index.html.erb within layouts/application (Duration: 6.7ms | Allocations: 1728)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 22ms (Views: 20.0ms | ActiveRecord: 0.8ms | Allocations: 5698)
+
+
+Started GET "/" for ::1 at 2019-12-31 18:03:42 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 1.1ms | Allocations: 372)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 28ms (Views: 25.8ms | ActiveRecord: 0.0ms | Allocations: 5087)
+
+
+Started GET "/income_values" for ::1 at 2019-12-31 18:03:46 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.2ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (0.1ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mCACHE Income Load (0.0ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mCACHE Income Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mCACHE Income Load (0.0ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 55.8ms | Allocations: 13152)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 105ms (Views: 56.9ms | ActiveRecord: 23.4ms | Allocations: 18799)
+
+
+Started GET "/fixedcost_values" for ::1 at 2019-12-31 18:03:53 +0900
+Processing by FixedcostValuesController#index as HTML
+  Rendering fixedcost_values/index.html.erb within layouts/application
+  [1m[36mFixedcostValue Load (0.2ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/fixedcost_values/index.html.erb:10
+  [1m[36mFixedcost Load (0.1ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 1 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/index.html.erb:21
+  [1m[36mFixedcost Load (0.2ms)[0m  [1m[34mSELECT `fixedcosts`.* FROM `fixedcosts` WHERE `fixedcosts`.`id` = 2 ORDER BY `fixedcosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/fixedcost_values/index.html.erb:21
+  Rendered fixedcost_values/index.html.erb within layouts/application (Duration: 37.7ms | Allocations: 9998)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 70ms (Views: 36.5ms | ActiveRecord: 29.4ms | Allocations: 15724)
+
+
+Started GET "/variablecost_values" for ::1 at 2019-12-31 18:03:58 +0900
+Processing by VariablecostValuesController#index as HTML
+  Rendering variablecost_values/index.html.erb within layouts/application
+  [1m[36mVariablecostValue Load (0.2ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/variablecost_values/index.html.erb:12
+  [1m[36mVariablecost Load (0.2ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` WHERE `variablecosts`.`id` = 1 ORDER BY `variablecosts`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/variablecost_values/index.html.erb:23
+  Rendered variablecost_values/index.html.erb within layouts/application (Duration: 4.7ms | Allocations: 1741)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 23ms (Views: 18.9ms | ActiveRecord: 0.5ms | Allocations: 5553)
+
+
+Started GET "/variablecosts" for ::1 at 2019-12-31 18:04:09 +0900
+Processing by VariablecostsController#index as HTML
+  Rendering variablecosts/index.html.erb within layouts/application
+  [1m[36mVariablecost Load (0.3ms)[0m  [1m[34mSELECT `variablecosts`.* FROM `variablecosts` ORDER BY `variablecosts`.`created_at` ASC[0m
+  ↳ app/views/variablecosts/index.html.erb:6
+  Rendered variablecosts/index.html.erb within layouts/application (Duration: 25.1ms | Allocations: 1186)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 34ms (Views: 32.5ms | ActiveRecord: 0.3ms | Allocations: 5536)
+
+
+Started GET "/income_values" for ::1 at 2019-12-31 18:07:20 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.9ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (1.9ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.6ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (1.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mCACHE Income Load (0.0ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mCACHE Income Load (0.0ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mCACHE Income Load (0.0ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 45.6ms | Allocations: 5809)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 75ms (Views: 68.2ms | ActiveRecord: 4.8ms | Allocations: 9923)
+
+
+Started GET "/income_values" for ::1 at 2019-12-31 18:08:27 +0900
+Processing by IncomeValuesController#index as HTML
+  Rendering income_values/index.html.erb within layouts/application
+  [1m[36mIncomeValue Load (0.3ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` ORDER BY yearmonth asc[0m
+  ↳ app/views/income_values/index.html.erb:10
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mIncome Load (0.2ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mCACHE Income Load (0.0ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 1 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mCACHE Income Load (0.0ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 2 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  [1m[36mCACHE Income Load (0.0ms)[0m  [1m[34mSELECT `incomes`.* FROM `incomes` WHERE `incomes`.`id` = 3 ORDER BY `incomes`.`created_at` ASC LIMIT 1[0m
+  ↳ app/views/income_values/index.html.erb:22
+  Rendered income_values/index.html.erb within layouts/application (Duration: 52.9ms | Allocations: 6299)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 67ms (Views: 65.1ms | ActiveRecord: 1.0ms | Allocations: 11088)
+
+
