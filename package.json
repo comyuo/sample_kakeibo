@@ -2,6 +2,7 @@
   "name": "sample_kakeibo",
   "private": true,
   "dependencies": {
+    "chart.js": "^2.7.1",
     "@rails/actioncable": "^6.0.0",
     "@rails/activestorage": "^6.0.0",
     "@rails/ujs": "^6.0.0",

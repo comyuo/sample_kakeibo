@@ -71,35 +71,36 @@
             <th>備考</th>
         </tr>
     </thead>
-<tbody>
-    <% @variablecost_values.each do |variablecost_value| %>
-        <tr>
-            <td><%= @variablecosts.find(variablecost_value.variablecost_id).name %></td>
-            <td style="text-align: right"><%= variablecost_value.value %>円</td>
-            <td><%= variablecost_value.description %></td>
-        </tr>
-    <% end %>
-    <tr>
-        <td><b>変動費合計</b></td>
-        <td style="text-align: right"><b><%= @variablecost_value_total %>円</b></td>
-        <td></td>
-    </tr>
-</tbody>
-</table>
+    <tbody>
+        <% @variablecost_values.each do |variablecost_value| %>
+            <tr>
+                <td><%= @variablecosts.find(variablecost_value.variablecost_id).name %></td>
+                <td style="text-align: right"><%= variablecost_value.value %>円</td>
+                <td><%= variablecost_value.description %></td>
+            </tr>
+        <% end %>
+            <tr>
+                <td><b>変動費合計</b></td>
+                <td style="text-align: right"><b><%= @variablecost_value_total %>円</b></td>
+                <td></td>
+            </tr>
 
-<h3>収支結果</h3>
-
-<table>
-<tbody>
-<tr>
-    <td><b>収支差</b></td>
-    <td style="text-align: right"><b><%= @valance_difference %>円</b></td>
-    <td></td>
-</tr>
-</tbody>
+    </tbody>
 </table>
-<b>収支差 : <%= @balance_difference %> 円</b>
 
 <% else %>
     <p>登録されている変動費がありません</p>
 <% end %>
+
+<h3>収支結果</h3>
+
+<table>
+    <tbody>
+        <tr>
+            <td><b>収支差</b></td>
+            <td style="text-align: right"><b><%= @balance_difference %>円</b></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+<b>収支差 : <%= @balance_difference %> 円</b>

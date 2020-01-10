@@ -14,7 +14,7 @@ ActiveRecord::Schema.define(version: 2019_12_25_124145) do
 
   create_table "fixedcost_values", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.integer "fixedcost_id", null: false
-    t.date "year_month"
+    t.date "yearmonth"
     t.integer "value"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
@@ -30,7 +30,7 @@ ActiveRecord::Schema.define(version: 2019_12_25_124145) do
 
   create_table "income_values", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.integer "income_id", null: false
-    t.date "year_month"
+    t.date "yearmonth"
     t.integer "value"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false
@@ -46,7 +46,7 @@ ActiveRecord::Schema.define(version: 2019_12_25_124145) do
 
   create_table "variablecost_values", options: "ENGINE=InnoDB DEFAULT CHARSET=utf8mb4", force: :cascade do |t|
     t.integer "variablecost_id", null: false
-    t.date "year_month"
+    t.date "yearmonth"
     t.integer "value"
     t.string "description"
     t.datetime "created_at", precision: 6, null: false

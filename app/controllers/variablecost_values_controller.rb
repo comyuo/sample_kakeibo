@@ -10,7 +10,7 @@ class VariablecostValuesController < ApplicationController
  
 	def new
 		year_month_day = params[:yearmonth] + "-01"
-		@year_month = year_month_day.to_date
+		@yearmonth = year_month_day.to_date
  
 		@variablecosts = Variablecost.order(created_at: :asc)
 		@form = Form::VariablecostForm.new
