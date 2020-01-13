@@ -33,7 +33,7 @@ window.draw_graph = ->
                 data: gon.data_incomes,
                 backgroundColor: incom_bgColors,
                 borderColor: incom_bdColors,
-                borderWidth: 1,
+                borderWidth: 1
             },{
                 label: '固定費合計値',
                 data: gon.data_fixedcosts,
@@ -41,21 +41,21 @@ window.draw_graph = ->
                 borderColor: fixed_bdColors,
                 borderWidth: 1,
                 type: 'bar'
-            },{
-                label: '変動費合計値'
+              },{
+                label: '変動費合計値',
                 data: gon.data_variablecosts,
                 backgroundColor: variable_bgColors,
                 borderColor: variable_bdColors,
                 borderWidth: 1,
                 type: 'bar'
             },{
-                label: '収支結果合計値'
+                label: '収支結果合計値',
                 data: gon.data_results,
                 backgroundColor: result_bgColors,
                 borderColor: result_bdColors,
                 borderWidth: 1,
                 type: 'bar'
-            }]
+              }]
         },
         options: {
             scales: {
