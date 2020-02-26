@@ -8104,3 +8104,123 @@ Processing by TopController#index as HTML
 Completed 200 OK in 15ms (Views: 13.9ms | ActiveRecord: 0.0ms | Allocations: 4470)
 
 
+DEPRECATION WARNING: Initialization autoloaded the constants ActionText::ContentHelper and ActionText::TagHelper.
+
+Being able to do this is deprecated. Autoloading during initialization is going
+to be an error condition in future versions of Rails.
+
+Reloading does not reboot the application, and therefore code executed during
+initialization does not run again. So, if you reload ActionText::ContentHelper, for example,
+the expected changes won't be reflected in that stale Module object.
+
+These autoloaded constants have been unloaded.
+
+Please, check the "Autoloading and Reloading Constants" guide for solutions.
+ (called from <main> at /home/hironoriogata/sample_kakeibo/config/environment.rb:5)
+Started GET "/" for ::1 at 2020-02-27 08:05:03 +0900
+  [1m[35m (94.9ms)[0m  [1m[35mSET NAMES utf8mb4,  @@SESSION.sql_mode = CONCAT(CONCAT(@@sql_mode, ',STRICT_ALL_TABLES'), ',NO_AUTO_VALUE_ON_ZERO'),  @@SESSION.sql_auto_is_null = 0, @@SESSION.wait_timeout = 2147483[0m
+  [1m[35m (71.5ms)[0m  [1m[34mSELECT `schema_migrations`.`version` FROM `schema_migrations` ORDER BY `schema_migrations`.`version` ASC[0m
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 81.0ms | Allocations: 562)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 764ms (Views: 660.3ms | ActiveRecord: 0.0ms | Allocations: 11096)
+
+
+Started GET "/balance_confirm" for ::1 at 2020-02-27 08:05:09 +0900
+Processing by BalanceConfirmController#top as HTML
+  Rendering balance_confirm/top.html.erb within layouts/application
+  Rendered balance_confirm/top.html.erb within layouts/application (Duration: 68.6ms | Allocations: 1547)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 153ms (Views: 149.4ms | ActiveRecord: 0.0ms | Allocations: 6425)
+
+
+Started POST "/balance_confirm/show_year" for ::1 at 2020-02-27 08:05:14 +0900
+Processing by BalanceConfirmController#show_year as HTML
+  Parameters: {"authenticity_token"=>"vrtURQ2uI0KuiuBu/OGGabMmDh7J0rXblmsfGn9nUHGHWKQUGYUsIHRkM7w/7NKQWWZ6uFEldbE1cmFYwmFuMA==", "year"=>"2020"}
+  [1m[36mIncomeValue Load (1.9ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`yearmonth` = '2020-01-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:44:in `block in show_year'
+  [1m[36mIncomeValue Load (1.1ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`yearmonth` = '2020-02-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:44:in `block in show_year'
+  [1m[36mIncomeValue Load (8.5ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`yearmonth` = '2020-03-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:44:in `block in show_year'
+  [1m[36mIncomeValue Load (1.5ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`yearmonth` = '2020-04-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:44:in `block in show_year'
+  [1m[36mIncomeValue Load (1.2ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`yearmonth` = '2020-05-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:44:in `block in show_year'
+  [1m[36mIncomeValue Load (1.3ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`yearmonth` = '2020-06-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:44:in `block in show_year'
+  [1m[36mIncomeValue Load (1.1ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`yearmonth` = '2020-07-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:44:in `block in show_year'
+  [1m[36mIncomeValue Load (8.8ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`yearmonth` = '2020-08-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:44:in `block in show_year'
+  [1m[36mIncomeValue Load (1.1ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`yearmonth` = '2020-09-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:44:in `block in show_year'
+  [1m[36mIncomeValue Load (1.0ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`yearmonth` = '2020-10-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:44:in `block in show_year'
+  [1m[36mIncomeValue Load (0.7ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`yearmonth` = '2020-11-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:44:in `block in show_year'
+  [1m[36mIncomeValue Load (0.9ms)[0m  [1m[34mSELECT `income_values`.* FROM `income_values` WHERE `income_values`.`yearmonth` = '2020-12-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:44:in `block in show_year'
+  [1m[36mFixedcostValue Load (6.4ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`yearmonth` = '2020-01-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:58:in `block in show_year'
+  [1m[36mFixedcostValue Load (0.8ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`yearmonth` = '2020-02-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:58:in `block in show_year'
+  [1m[36mFixedcostValue Load (1.0ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`yearmonth` = '2020-03-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:58:in `block in show_year'
+  [1m[36mFixedcostValue Load (0.9ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`yearmonth` = '2020-04-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:58:in `block in show_year'
+  [1m[36mFixedcostValue Load (0.9ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`yearmonth` = '2020-05-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:58:in `block in show_year'
+  [1m[36mFixedcostValue Load (1.9ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`yearmonth` = '2020-06-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:58:in `block in show_year'
+  [1m[36mFixedcostValue Load (0.9ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`yearmonth` = '2020-07-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:58:in `block in show_year'
+  [1m[36mFixedcostValue Load (0.8ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`yearmonth` = '2020-08-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:58:in `block in show_year'
+  [1m[36mFixedcostValue Load (3.1ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`yearmonth` = '2020-09-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:58:in `block in show_year'
+  [1m[36mFixedcostValue Load (0.9ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`yearmonth` = '2020-10-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:58:in `block in show_year'
+  [1m[36mFixedcostValue Load (0.7ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`yearmonth` = '2020-11-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:58:in `block in show_year'
+  [1m[36mFixedcostValue Load (0.7ms)[0m  [1m[34mSELECT `fixedcost_values`.* FROM `fixedcost_values` WHERE `fixedcost_values`.`yearmonth` = '2020-12-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:58:in `block in show_year'
+  [1m[36mVariablecostValue Load (1.2ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`yearmonth` = '2020-01-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:72:in `block in show_year'
+  [1m[36mVariablecostValue Load (0.7ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`yearmonth` = '2020-02-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:72:in `block in show_year'
+  [1m[36mVariablecostValue Load (4.3ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`yearmonth` = '2020-03-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:72:in `block in show_year'
+  [1m[36mVariablecostValue Load (0.8ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`yearmonth` = '2020-04-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:72:in `block in show_year'
+  [1m[36mVariablecostValue Load (1.0ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`yearmonth` = '2020-05-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:72:in `block in show_year'
+  [1m[36mVariablecostValue Load (1.9ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`yearmonth` = '2020-06-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:72:in `block in show_year'
+  [1m[36mVariablecostValue Load (1.9ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`yearmonth` = '2020-07-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:72:in `block in show_year'
+  [1m[36mVariablecostValue Load (1.1ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`yearmonth` = '2020-08-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:72:in `block in show_year'
+  [1m[36mVariablecostValue Load (0.6ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`yearmonth` = '2020-09-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:72:in `block in show_year'
+  [1m[36mVariablecostValue Load (0.6ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`yearmonth` = '2020-10-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:72:in `block in show_year'
+  [1m[36mVariablecostValue Load (0.8ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`yearmonth` = '2020-11-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:72:in `block in show_year'
+  [1m[36mVariablecostValue Load (0.8ms)[0m  [1m[34mSELECT `variablecost_values`.* FROM `variablecost_values` WHERE `variablecost_values`.`yearmonth` = '2020-12-01'[0m
+  ↳ app/controllers/balance_confirm_controller.rb:72:in `block in show_year'
+  Rendering balance_confirm/show_year.html.erb within layouts/application
+  Rendered balance_confirm/show_year.html.erb within layouts/application (Duration: 29.1ms | Allocations: 296)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 923ms (Views: 143.2ms | ActiveRecord: 205.2ms | Allocations: 43364)
+
+
+Started GET "/" for ::1 at 2020-02-27 08:05:22 +0900
+Processing by TopController#index as HTML
+  Rendering top/index.html.erb within layouts/application
+  Rendered top/index.html.erb within layouts/application (Duration: 2.3ms | Allocations: 192)
+[Webpacker] Everything's up-to-date. Nothing to do
+Completed 200 OK in 170ms (Views: 151.4ms | ActiveRecord: 0.0ms | Allocations: 5242)
+
+
